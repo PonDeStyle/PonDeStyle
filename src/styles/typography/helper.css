@@ -1,0 +1,27 @@
+.text-center {
+    text-align: center;
+
+    @media (--tablet) {
+        &--only_mobile {
+            text-align: left;
+        }
+    }
+}
+
+.split {
+    @media (--tablet) {
+        column-count: 2;
+    }
+}
+
+.hide-mobile {
+    @media (--phone-below) {
+        display: none !important;
+    }
+}
+
+.hide-pc {
+    @media (--wide) {
+        display: none !important;
+    }
+}

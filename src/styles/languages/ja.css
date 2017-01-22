@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Yu Gothic';
+    font-weight: 300;
+    src: local('Yu Gothic Regular');
+}
+
+@font-face {
+    font-family: 'Yu Gothic';
+    font-weight: 400;
+    src: local('Yu Gothic Medium');
+}
+
+@font-face {
+    font-family: 'Yu Gothic';
+    font-weight: 500;
+    src: local('Yu Gothic Medium');
+}
+
+@font-face {
+    font-family: 'Yu Gothic';
+    font-weight: 600;
+    src: local('Yu Gothic Bold'), local('Yu Gothic');
+}
+
+@font-face {
+    font-family: 'Yu Gothic UI';
+    font-weight: 300;
+    src: local('Yu Gothic UI Regular');
+}
+
+@font-face {
+    font-family: 'Yu Gothic UI';
+    font-weight: 400;
+    src: local('Yu Gothic UI Regular');
+}
+
+@font-face {
+    font-family: 'Yu Gothic UI';
+    font-weight: 500;
+    src: local('Yu Gothic UI Regular');
+}
+
+@font-face {
+    font-family: 'Yu Gothic UI';
+    font-weight: 600;
+    src: local('Yu Gothic UI Semibold');
+}
+
+@font-face {
+    font-family: 'Hiragino Sans';
+    font-weight: 100;
+    src: local('HiraginoSans-W0');
+}
+
+@font-face {
+    font-family: 'Hiragino Sans';
+    font-weight: 200;
+    src: local('HiraginoSans-W1');
+}
+
+@font-face {
+    font-family: 'Hiragino Sans';
+    font-weight: 300;
+    src: local('HiraginoSans-W2');
+}
+
+@font-face {
+    font-family: 'Hiragino Sans';
+    font-weight: 400;
+    src: local('HiraginoSans-W3');
+}
+
+@font-face {
+    font-family: 'Hiragino Sans';
+    font-weight: 500;
+    src: local('HiraginoSans-W4');
+}
+
+@font-face {
+    font-family: 'Hiragino Sans';
+    font-weight: 600;
+    src: local('HiraginoSans-W5');
+}
+
+@font-face {
+    font-family: 'Hiragino Sans';
+    font-weight: 700;
+    src: local('HiraginoSans-W6');
+}
+
+@font-face {
+    font-family: 'Hiragino Sans';
+    font-weight: 800;
+    src: local('HiraginoSans-W7');
+}
+
+@font-face {
+    font-family: 'Hiragino Sans';
+    font-weight: 900;
+    src: local('HiraginoSans-W8');
+}
+
+html[lang='ja'] {
+    font-family: 'Avenir Next', 'Segoe UI', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+}
+
+html[lang='ja'] .serif {
+    font-family: 'Times New Roman', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+}
+
+html[lang='ja'] :matches(.alert, .pagination, .breadcrumbs, .decolink) {
+    font-family: 'Avenir Next', 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif;
+}

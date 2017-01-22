@@ -1,0 +1,34 @@
+.vertical-nav,
+.toc {
+    & li {
+        list-style: none;
+    }
+
+    & ul {
+        padding-left: .8rem;
+    }
+
+    & a {
+        display: block;
+        padding: .2rem .6rem;
+    }
+
+    &__list {
+        padding-left: .8rem;
+    }
+
+    &__item {
+        list-style: none;
+
+        &--current {
+            & > a {
+                background: var(--whity-gray-color);
+                border-radius: var(--border-radius);
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: .4rem;
+    }
+}

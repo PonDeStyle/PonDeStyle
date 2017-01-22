@@ -1,0 +1,7 @@
+html[lang='ko'] {
+    font-family: 'Avenir Next', 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+}
+
+html[lang='ko'] .serif {
+    font-family: 'Times New Roman', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+}

@@ -1,0 +1,34 @@
+:root {
+    /* --primary-color: hsl(206, 90%, 52%); */
+    --primary-color: #3086e6;
+    --black-color: #000;
+    --white-color: #fff;
+    --whity-gray-color: hsl(180, 14%, 97%);
+    --light-gray-color: hsl(205, 27%, 77%);
+    --dark-gray-color: hsl(204, 10%, 30%);
+    --red-color: #e92a73;
+
+    /* --primary-color-grad-to: color(var(--primary-color) hue(- 9) saturation(+ 10%) lightness(+ 5%)); */
+    --primary-color-grad-to: #039eff;
+    --primary-color-gradient: linear-gradient(45deg, var(--primary-color), var(--primary-color-grad-to));
+    --container-width: 67.5rem;
+    --std-size: 16px;
+    --section-padding: 1rem;
+    --fixed-column-width: 18.75rem;
+    --body-spacing-width: 10px;
+    --heading-highest-rank: 2.625rem;
+    --heading-high-rank: 2.25rem;
+    --heading-high-middle-rank: 1.875rem;
+    --heading-low-middle-rank: 1.5rem;
+    --heading-low-rank: 1.25rem;
+    --heading-lowest-rank: 1rem;
+    --text-color-dark: #464f55;
+    --text-mark-color: #f9ffb2;
+    --border-radius: 2px;
+    --font-weight-light: 200;
+    --font-weight-demilight: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-demibold: 600;
+    --font-weight-bold: 700;
+}

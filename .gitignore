@@ -1,0 +1,8 @@
+# IntelliJ project files
+.idea
+out
+gen
+
+.DS_Store
+/node_modules/
+index.html

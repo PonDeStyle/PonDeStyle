@@ -1,0 +1,21 @@
+.fullwidth-bar {
+    background: var(--primary-color-gradient);
+    color: var(--white-color);
+    padding: .6rem 1rem;
+    text-align: center;
+    width: 100%;
+
+    & > * {
+        display: inline-flex;
+        margin: 0 1rem;
+        vertical-align: middle;
+    }
+
+    &--red {
+        background: var(--red-color);
+    }
+
+    &--black {
+        background: var(--black-color);
+    }
+}

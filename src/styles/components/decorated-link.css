@@ -1,0 +1,48 @@
+.decolink,
+.button {
+    align-items: center;
+    background: var(--primary-color-gradient);
+    border-radius: var(--border-radius);
+    color: var(--white-color);
+    display: inline-flex;
+    font-size: 1.19rem;
+    font-weight: 300;
+    height: 2.2em;
+    outline: none;
+    padding: 0 .8em;
+    text-decoration: none;
+    vertical-align: top;
+
+    &:hover {
+        background: var(--primary-color-grad-to);
+        color: var(--white-color);
+    }
+
+    &:active {
+        background: var(--primary-color);
+        color: var(--white-color);
+    }
+
+    &--reverted {
+        background: var(--white-color);
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+
+        &:hover {
+            background: var(--whity-gray-color);
+            color: var(--primary-color);
+        }
+    }
+
+    &--large {
+        font-size: 1.6rem;
+    }
+
+    &--small {
+        font-size: .8rem;
+    }
+
+    &--rounded {
+        border-radius: calc(2.2em / 2);
+    }
+}

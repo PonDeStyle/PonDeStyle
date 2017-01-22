@@ -1,0 +1,42 @@
+table {
+    border-radius: var(--border-radius);
+    overflow-x: scroll;
+    text-align: left;
+    width: 100%;
+}
+
+thead {
+    & th {
+        background: var(--whity-gray-color);
+        border-bottom-color: var(--primary-color);
+    }
+}
+
+tfoot {
+    font-weight: 500;
+}
+
+tr {
+    max-width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid var(--light-gray-color);
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: .3rem .6rem;
+}
+
+th {
+    background: var(--whity-gray-color);
+    font-weight: 500;
+    text-align: left;
+}
+
+tr,
+th,
+td {
+    overflow: hidden;
+}

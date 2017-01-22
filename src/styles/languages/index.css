@@ -1,0 +1,16 @@
+/* Language files
+ * Each files include each language font-family such as html[lang='**'].
+ * if you are not nesessary, please comment out. */
+
+/* Import global font-family.
+ * This is required */
+@import 'global.css';
+
+/* Import Japanese font-family. */
+@import 'ja.css';
+
+/* Import Korean font-family */
+@import 'ko.css';
+
+/* Import Chinese-simplified font-family */
+@import 'zh-cn.css';

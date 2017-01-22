@@ -1,0 +1,11 @@
+html {
+    font-family: 'Avenir Next', 'Segoe UI', sans-serif;
+}
+
+pre,
+code,
+kbd,
+var,
+samp {
+    font-family: 'Menlo', Consolas, Courier, monospace;
+}

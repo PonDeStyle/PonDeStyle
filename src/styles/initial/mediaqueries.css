@@ -1,0 +1,6 @@
+@custom-media --phone (min-width: 544px); /* stylelint-disable-line */
+@custom-media --tablet (min-width: 768px); /* stylelint-disable-line */
+@custom-media --desktop (min-width: 992px); /* stylelint-disable-line */
+@custom-media --wide (min-width: 1080px); /* stylelint-disable-line */
+@custom-media --phone-below (max-width: 543px); /* stylelint-disable-line */
+@custom-media --tablet-below (max-width: 767px); /* stylelint-disable-line */

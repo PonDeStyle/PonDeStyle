@@ -1,0 +1,171 @@
+body {
+    color: var(--text-color-dark);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.7;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+.h1 {
+    font-size: var(--heading-highest-rank);
+}
+
+h2,
+.h2,
+.O h1,
+.outline h1 {
+    font-size: var(--heading-high-rank);
+}
+
+h3,
+.h3,
+.O .O h1,
+.outline .outline h1 {
+    font-size: var(--heading-high-middle-rank);
+}
+
+h4,
+.h4,
+.O .O .O h1,
+.outline .outline .outline h1 {
+    font-size: var(--heading-low-middle-rank);
+}
+
+h5,
+.h5,
+.O .O .O .O h1,
+.outline .outline .outline .outline h1 {
+    font-size: var(--heading-low-rank);
+}
+
+h6,
+.h6,
+.O .O .O .O .O h1,
+.outline .outline .outline .outline .outline h1 {
+    font-size: var(--heading-lowest-rank);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.2;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+p {
+    font-size: inherit;
+    font-weight: inherit;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+ul,
+ol {
+    margin-bottom: 1rem;
+    padding-left: 1.8rem;
+}
+
+:matches(ul, dl) :matches(ul, dl) {
+    margin-bottom: 0;
+}
+
+dl {
+    & > dt {
+        font-size: var(--heading-low-rank);
+    }
+
+    & > dd {
+        padding-left: 1rem;
+    }
+}
+
+strong {
+    font-weight: var(--font-weight-bold);
+}
+
+em {
+    font-weight: var(--font-weight-medium);
+}
+
+i {
+    font-weight: var(--font-weight-demilight);
+}
+
+mark {
+    background-color: var(--text-mark-color);
+    padding: .2em .4em 0;
+}
+
+a {
+    color: var(--primary-color);
+
+    &:hover {
+        color: var(--primary-color-grad-to);
+    }
+}
+
+pre {
+    background: var(--whity-gray-color);
+    padding: 1rem;
+}
+
+blockquote {
+    border-left: .4rem solid #464f55;
+    font-weight: var(--font-weight-medium);
+    padding-bottom: .4rem;
+    padding-left: 1rem;
+}
+
+blockquote > :last-child {
+    margin: 0;
+}
+
+blockquote + .holder {
+    border-left: .4rem solid #464f55;
+    color: var(--light-gray-color);
+    padding-left: 1rem;
+
+    &::before {
+        content: '-';
+        display: inline-block;
+        margin-right: .6rem;
+    }
+}
+
+figure.blockquote {
+    border-left: .4rem solid #464f55;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+
+    & blockquote {
+        border: none;
+        padding-left: 0;
+    }
+
+    & figcaption {
+        &::before {
+            content: '-';
+            display: inline-block;
+            margin-right: .6rem;
+        }
+    }
+}
+
+hgroup {
+    & :matches(h2, h3, h4, h5, h6, p) {
+        font-weight: var(--font-weight-regular);
+    }
+}
+
+.subhead {
+    font-weight: var(--font-weight-regular);
+}

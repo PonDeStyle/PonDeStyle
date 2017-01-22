@@ -1,0 +1,9 @@
+/* Including components */
+
+@import 'breadcrumbs.css';
+@import 'pagination.css';
+@import 'triangle.css';
+@import 'decorated-link.css';
+@import 'decorated-picture.css';
+@import 'alert.css';
+@import 'vertical-nav.css';

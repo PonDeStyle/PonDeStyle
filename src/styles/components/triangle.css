@@ -1,0 +1,43 @@
+.triangle {
+    display: inline-flex;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(0);
+    z-index: 9999;
+
+    &::before {
+        border: 50px solid;
+        border-color: #000 #000 transparent transparent;
+        content: '';
+        display: block;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+    }
+
+    &__content {
+        bottom: 0;
+        color: #fff;
+        display: inline-block;
+        left: -15px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 18px;
+        transform: rotate(45deg);
+    }
+
+    &--fixed {
+        position: fixed;
+    }
+
+    &--red {
+        &::before {
+            border-color: var(--red-color) var(--red-color) transparent transparent;
+        }
+    }
+}

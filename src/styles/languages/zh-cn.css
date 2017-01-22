@@ -1,0 +1,7 @@
+html[lang^='zh'] {
+    font-family: 'Avenir Next', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+html[lang^='zh'] .serif {
+    font-family: 'Times New Roman', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+}

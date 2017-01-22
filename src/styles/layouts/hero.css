@@ -1,0 +1,45 @@
+.hero,
+.H {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0;
+    position: relative;
+
+    @media (--tablet) {
+        padding: 8rem 0;
+    }
+
+    &--colored {
+        background: var(--primary-color-gradient);
+        color: var(--white-color);
+    }
+
+    &--black {
+        background: var(--dark-gray-color);
+        color: var(--white-color);
+    }
+
+    &--gray {
+        background: var(--whity-gray-color);
+    }
+
+    &--small {
+        padding: 2rem 0;
+
+        @media (--tablet) {
+            padding: 4rem 0;
+        }
+    }
+
+    &--full {
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    &--picture {
+        background-position: center;
+        background-size: cover;
+        color: var(--white-color);
+    }
+}
