@@ -1,4 +1,6 @@
-# PonDeStyle
+# PonDeStyle 
+
+[![Build Status](https://travis-ci.org/PonDeStyle/PonDeStyle.svg?branch=master)](https://travis-ci.org/PonDeStyle/PonDeStyle)
 
 ![PonDeStyle](https://github.com/PonDeStyle/PonDeStyle/wiki/images/pondestyle-git-wall.png)
 
