@@ -8,6 +8,7 @@
     font-size: 1.19rem;
     font-weight: 300;
     height: 2.2em;
+    margin-right: 1rem;
     outline: none;
     padding: 0 .8em;
     text-decoration: none;
@@ -44,5 +45,23 @@
 
     &--rounded {
         border-radius: calc(2.2em / 2);
+    }
+
+    &--fullwidth {
+        width: 100%;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            margin: auto;
+        }
+    }
+
+    &--disable,
+    &--disable:hover {
+        background: var(--whity-gray-color);
+        color: var(--light-gray-color);
+        cursor: default;
     }
 }

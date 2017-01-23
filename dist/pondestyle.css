@@ -1261,6 +1261,7 @@ td {
     font-size: 1.19rem;
     font-weight: 300;
     height: 2.2em;
+    margin-right: 1rem;
     outline: none;
     padding: 0 .8em;
     text-decoration: none;
@@ -1305,6 +1306,29 @@ td {
 .decolink--rounded,
 .button--rounded {
     border-radius: 1.1em;
+}
+
+.decolink--fullwidth,
+.button--fullwidth {
+    width: 100%;
+}
+
+.decolink--fullwidth::before,
+.decolink--fullwidth::after,
+.button--fullwidth::before,
+.button--fullwidth::after {
+    content: '';
+    display: block;
+    margin: auto;
+}
+
+.decolink--disable,
+.decolink--disable:hover,
+.button--disable,
+.button--disable:hover {
+    background: hsl(180, 14%, 97%);
+    color: hsl(205, 27%, 77%);
+    cursor: default;
 }
 
 .decopicture {
