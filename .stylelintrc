@@ -99,10 +99,10 @@
         "property-no-unknown": true,
         "rule-nested-empty-line-before": [ "always-multi-line", {
           except: ["first-nested"],
-          ignore: ["after-comment"],
+          ignore: ["after-comment"]
         } ],
         "rule-non-nested-empty-line-before": [ "always-multi-line", {
-          ignore: ["after-comment"],
+          ignore: ["after-comment"]
         } ],
         "selector-attribute-brackets-space-inside": "never",
         "selector-attribute-operator-space-after": "never",
