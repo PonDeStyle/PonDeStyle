@@ -3,10 +3,15 @@
     border-radius: var(--border-radius);
     color: var(--white-color);
     display: flex;
+    margin-bottom: 1rem;
     position: relative;
 
     &__message {
         padding: .4rem 1.2rem;
+    }
+
+    & &__message {
+        margin: 0;
     }
 
     &__button {
