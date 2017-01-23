@@ -44,12 +44,12 @@
         } ],
         "declaration-block-no-redundant-longhand-properties": true,
         "declaration-block-no-shorthand-property-overrides": true,
+        "declaration-block-properties-order": "alphabetical",
         "declaration-block-semicolon-newline-after": "always-multi-line",
         "declaration-block-semicolon-space-after": "always-single-line",
         "declaration-block-semicolon-space-before": "never",
         "declaration-block-single-line-max-declarations": 1,
         "declaration-block-trailing-semicolon": "always",
-        "declaration-block-properties-order": "alphabetical",
         "declaration-colon-newline-after": "always-multi-line",
         "declaration-colon-space-after": "always-single-line",
         "declaration-colon-space-before": "never",
@@ -128,6 +128,6 @@
         "value-list-comma-newline-after": "always-multi-line",
         "value-list-comma-space-after": "always-single-line",
         "value-list-comma-space-before": "never",
-        "value-list-max-empty-lines": 0,
+        "value-list-max-empty-lines": 0
     }
 }

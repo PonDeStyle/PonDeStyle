@@ -33,8 +33,7 @@ var discardComments = require('postcss-discard-comments');
 
 gulp.task('postcss', function () {
     var plugins = [
-        atImport,
-        stylelint,
+        atImport( { plugins: [stylelint] } ),
         customProperties,
         calc,
         nesting,
@@ -42,9 +41,9 @@ gulp.task('postcss', function () {
         colorFunction,
         matches,
         autoprefixer({ browsers: ['last 1 version'] }),
-        reporter({ clearMessages: true }),
         discardEmpty,
-        discardComments
+        discardComments,
+        reporter({ clearMessages: true })
     ];
 
     return gulp.src('./src/styles/pondestyle.css')
