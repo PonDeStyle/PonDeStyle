@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Components | PonDeStyleDemo</title>
+    <link rel="stylesheet" href="pondestyle.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="theme-color" content="#3086e6">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+<header class="header">
+    <div class="container section section--only_beside section--only_pc">
+        <div class="header__left">
+            <div class="header__logo">
+                <a href="#">PonDeStyle</a>
+            </div>
+        </div>
+        <div class="header__right">
+            <div class="global-nav hide-mobile">
+                <a href="#" class="global-nav__item">Home</a>
+                <a href="#" class="global-nav__item">Document</a>
+                <a href="#" class="global-nav__item">Github</a>
+            </div>
+        </div>
+    </div>
+</header>
+<header class="hero hero--colored">
+    <div class="triangle">
+        <div class="triangle__content">ALPHA</div>
+    </div>
+    <div class="container">
+        <hgroup class="section">
+            <h1 class="h3">Components</h1>
+            <h5>Many components.</h5>
+        </hgroup>
+    </div>
+</header>
+<section class="O bezel">
+    <div class="container">
+        <div class="section">
+            <h1>Horizontal Menu</h1>
+            <div class="horizontal-menu">
+                <ul class="horizontal-menu__list horizontal-menu__list--fill-border">
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item horizontal-menu__item--current"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                </ul>
+            </div>
+            <div class="horizontal-menu">
+                <ul class="horizontal-menu__list horizontal-menu__list--fill-border horizontal-menu__list--left">
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item horizontal-menu__item--current"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                </ul>
+            </div>
+            <div class="horizontal-menu">
+                <ul class="horizontal-menu__list horizontal-menu__list--fill-border horizontal-menu__list--right">
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item horizontal-menu__item--current"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                    <li class="horizontal-menu__item"><a href="#">Item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Alert</h1>
+            <div class="alert">
+                <p class="alert__message">TEXT</p>
+                <button class="alert__button" aria-label="Close"></button>
+            </div>
+            <div class="alert alert--red">
+                <p class="alert__message"><strong>Error:</strong> Please contact for support team.</p>
+                <button class="alert__button" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Pagination</h1>
+            <div class="pagination">
+                <span class="pagination__item pagination__item_prev pagination__item--disable">Prev</span>
+                <span class="pagination__item pagination__item_num"><a href="#">1</a></span>
+                <span class="pagination__item pagination__item_num"><a href="#">2</a></span>
+                <span class="pagination__item pagination__item_num pagination__item--current">3</span>
+                <span class="pagination__item pagination__item_num"><a href="#">4</a></span>
+                <span class="pagination__item pagination__item_num"><a href="#">5</a></span>
+                <span class="pagination__item pagination__item_next"><a href="#">Next</a></span>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Breadcrumbs</h1>
+            <div class="breadcrumbs">
+                <span class="breadcrumbs__item"><a href="#">Home</a></span>
+                <span class="breadcrumbs__item"><a href="#">Name</a></span>
+                <span class="breadcrumbs__item"><a href="#">Name 2</a></span>
+                <span class="breadcrumbs__item breadcrumbs__item--current">This is a entry.</span>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Button</h1>
+            <p><button class="button">BUTTON</button><button class="button button--reversed">BUTTON</button></p>
+            <p><button class="button button--large">BUTTON</button><button class="button">BUTTON</button><button class="button button--small">BUTTON</button></p>
+            <p><button class="button button--fullwidth">BUTTON</button></p>
+            <p><a href="#" class="decolink">DECOLINK</a><a href="#" class="decolink decolink--reversed">DECOLINK</a></p>
+            <p><a href="#" class="decolink decolink--disable">DECOLINK</a><a href="#" class="decolink decolink--reversed">DECOLINK</a></p>
+            <p><span class="decolink decolink--disable">SPANDECO</span></p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
