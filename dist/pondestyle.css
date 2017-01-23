@@ -1147,7 +1147,7 @@ td {
     display: flex;
 }
 
-.pagination > * {
+.pagination__item {
     align-items: center;
     border: 1px solid hsl(205, 27%, 77%);
     border-radius: 2px;
@@ -1156,7 +1156,7 @@ td {
     text-decoration: none;
 }
 
-.pagination a {
+.pagination__item > a {
     align-items: center;
     color: inherit;
     display: inline-flex;
@@ -1165,33 +1165,45 @@ td {
     text-decoration: none;
 }
 
-.pagination a:hover {
+.pagination__item > a:hover {
     background: hsl(180, 14%, 97%);
 }
 
-.pagination__prev {
-    margin-right: auto;
-}
-
-.pagination__next {
-    margin-left: auto;
-}
-
-.pagination__num {
-    display: none;
+.pagination__item_num {
     margin: 0 .5rem;
 }
 
+.pagination__item_num:not(.pagination__item--current) {
+    display: none;
+}
+
 @media (min-width: 768px) {
-    .pagination__num {
+    .pagination__item_num:not(.pagination__item--current) {
         display: block;
     }
 }
 
-.pagination__num--current {
+.pagination__item_prev {
+    margin-right: auto;
+}
+
+.pagination__item_next {
+    margin-left: auto;
+}
+
+.pagination__item--current {
     background: linear-gradient(45deg, #3086e6, #039eff);
     border: none;
     color: #fff;
+    cursor: default;
+    display: inline-flex;
+    padding: 0 1rem;
+}
+
+.pagination__item--disable {
+    background: hsl(180, 14%, 97%);
+    border: none;
+    color: hsl(205, 27%, 77%);
     cursor: default;
     display: inline-flex;
     padding: 0 1rem;
@@ -1376,11 +1388,16 @@ td {
     border-radius: 2px;
     color: #fff;
     display: flex;
+    margin-bottom: 1rem;
     position: relative;
 }
 
 .alert__message {
     padding: .4rem 1.2rem;
+}
+
+.alert .alert__message {
+    margin: 0;
 }
 
 .alert__button {

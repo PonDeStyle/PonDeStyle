@@ -3,49 +3,60 @@
 
     display: flex;
 
-    & > * {
-        /* background: var(--primary-color-gradient); */
+    &__item {
         align-items: center;
         border: 1px solid var(--light-gray-color);
         border-radius: var(--border-radius);
         color: var(--dark-gray-color);
         font-weight: 400;
         text-decoration: none;
-    }
 
-    & a {
-        align-items: center;
-        color: inherit;
-        display: inline-flex;
-        height: 42px;
-        padding: 0 1rem;
-        text-decoration: none;
+        & > a {
+            align-items: center;
+            color: inherit;
+            display: inline-flex;
+            height: 42px;
+            padding: 0 1rem;
+            text-decoration: none;
 
-        &:hover {
-            background: var(--whity-gray-color);
+            &:hover {
+                background: var(--whity-gray-color);
+            }
         }
-    }
 
-    &__prev {
-        margin-right: auto;
-    }
+        &_num {
+            margin: 0 .5rem;
+        }
 
-    &__next {
-        margin-left: auto;
-    }
+        &_num:not(&--current) {
+            display: none;
 
-    &__num {
-        display: none;
-        margin: 0 .5rem;
+            @media (--tablet) {
+                display: block;
+            }
+        }
 
-        @media (--tablet) {
-            display: block;
+        &_prev {
+            margin-right: auto;
+        }
+
+        &_next {
+            margin-left: auto;
         }
 
         &--current {
             background: var(--primary-color-gradient);
             border: none;
             color: var(--white-color);
+            cursor: default;
+            display: inline-flex;
+            padding: 0 1rem;
+        }
+
+        &--disable {
+            background: var(--whity-gray-color);
+            border: none;
+            color: var(--light-gray-color);
             cursor: default;
             display: inline-flex;
             padding: 0 1rem;
