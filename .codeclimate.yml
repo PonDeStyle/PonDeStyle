@@ -1,0 +1,7 @@
+engines:
+  stylelint:
+    enabled: true
+    channel: "beta"
+ratings:
+  paths:
+  - "./src/style/**/*.css"
