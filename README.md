@@ -37,6 +37,6 @@ or,
 
 Copyright 2017 holy0201. Released under MIT License.
 
-It is bundles the following third-party resources:
+It bundles the following third-party resources:
 
 * ress (https://github.com/filipelinhares/ress) - MIT © Filipe Linhares
