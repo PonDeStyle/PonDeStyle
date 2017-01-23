@@ -28,10 +28,10 @@ var reporter = require('postcss-reporter');
 var stylelint = require('stylelint');
 var stylefmt = require('stylefmt');
 
-var discardEmpty = require('postcss-discard-empty');
-var discardComments = require('postcss-discard-comments');
-
 gulp.task('postcss', function () {
+    var discardEmpty = require('postcss-discard-empty');
+    var discardComments = require('postcss-discard-comments');
+
     var plugins = [
         atImport( { plugins: [stylelint] } ),
         customProperties,
