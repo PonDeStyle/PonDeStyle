@@ -63,7 +63,6 @@
             "inside-single-line-block",
           ],
         } ],
-        "font-family-no-duplicate-names": true,
         "function-calc-no-unspaced-operator": true,
         "function-comma-newline-after": "always-multi-line",
         "function-comma-space-after": "always-single-line",
