@@ -28,6 +28,9 @@ var reporter = require('postcss-reporter');
 var stylelint = require('stylelint');
 var stylefmt = require('stylefmt');
 
+var discardEmpty = require('postcss-discard-empty');
+var discardComments = require('postcss-discard-comments');
+
 gulp.task('postcss', function () {
     var plugins = [
         atImport,
@@ -39,7 +42,9 @@ gulp.task('postcss', function () {
         colorFunction,
         matches,
         autoprefixer({ browsers: ['last 1 version'] }),
-        reporter({ clearMessages: true })
+        reporter({ clearMessages: true }),
+        discardEmpty,
+        discardComments
     ];
 
     return gulp.src('./src/styles/pondestyle.css')
