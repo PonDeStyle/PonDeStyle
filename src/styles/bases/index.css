@@ -8,6 +8,9 @@
 /* Import flexbox grids system. */
 @import 'grids.css';
 
+/* Import section. */
+@import 'section.css';
+
 /* Import container. */
 @import 'container.css';
 

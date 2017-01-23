@@ -50,15 +50,20 @@ gulp.task('postcss', function () {
         .pipe(gulp.dest('./dist/'))
         .pipe(postcss([cssnano]))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write('../maps'))
+        .pipe(sourcemaps.write('../maps', {
+            sourceMappingURL: function(file) {
+                return file.relative + '.map';
+            }
+        }))
         .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('browser-sync', function () {
     browserSync({
         browser: 'FirefoxDeveloperEdition',
-        server: {baseDir: "./"}
-        //proxy: "localhost:8888/"
+        server: {
+            baseDir: ['demo', 'dist', 'maps']
+        }
     });
 });
 

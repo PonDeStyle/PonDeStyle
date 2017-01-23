@@ -1,6 +1,6 @@
 {
   "name": "PonDeStyle",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Lightweight CSS Framework",
   "main": "dist/style.css",
   "author": "holy0201 <holy0201@gmail.com>",

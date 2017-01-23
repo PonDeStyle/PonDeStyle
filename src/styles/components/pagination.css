@@ -1,4 +1,6 @@
 .pagination {
+    /* TODO Refactoring is absolutely required!! */
+
     display: flex;
 
     & > * {

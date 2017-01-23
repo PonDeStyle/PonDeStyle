@@ -25,3 +25,10 @@
         display: none !important;
     }
 }
+
+.gridtest {
+    background: var(--primary-color-gradient);
+    border-radius: var(--border-radius);
+    color: var(--white-color);
+    margin: 1rem;
+}

@@ -1,0 +1,25 @@
+.section {
+    padding: var(--section-padding);
+
+    &--shadowed {
+        box-shadow: 0 0 26px rgba(0, 0, 0, .06);
+        margin: var(--section-padding);
+        padding: 1.2rem;
+    }
+
+    &--only_beside {
+        padding: 0 var(--section-padding);
+    }
+
+    &--only_pc {
+        padding: 0;
+
+        @media (--wide) {
+            padding: var(--section-padding);
+
+            &.section--only_beside {
+                padding: 0 var(--section-padding);
+            }
+        }
+    }
+}

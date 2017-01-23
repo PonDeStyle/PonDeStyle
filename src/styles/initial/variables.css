@@ -7,6 +7,7 @@
     --light-gray-color: hsl(205, 27%, 77%);
     --dark-gray-color: hsl(204, 10%, 30%);
     --red-color: #e92a73;
+    --green-color: #30e58b;
 
     /* --primary-color-grad-to: color(var(--primary-color) hue(- 9) saturation(+ 10%) lightness(+ 5%)); */
     --primary-color-grad-to: #039eff;
@@ -16,15 +17,19 @@
     --section-padding: 1rem;
     --fixed-column-width: 18.75rem;
     --body-spacing-width: 10px;
+    --text-color-dark: #464f55;
+    --text-mark-color: #f9ffb2;
+    --border-radius: 2px;
+
+    /* Heading font size. */
     --heading-highest-rank: 2.625rem;
     --heading-high-rank: 2.25rem;
     --heading-high-middle-rank: 1.875rem;
     --heading-low-middle-rank: 1.5rem;
     --heading-low-rank: 1.25rem;
     --heading-lowest-rank: 1rem;
-    --text-color-dark: #464f55;
-    --text-mark-color: #f9ffb2;
-    --border-radius: 2px;
+
+    /* Font weight setting. */
     --font-weight-light: 200;
     --font-weight-demilight: 300;
     --font-weight-regular: 400;

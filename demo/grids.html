@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Grids | PonDeStyleDemo</title>
+    <link rel="stylesheet" href="pondestyle.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="theme-color" content="#3086e6">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container section section--only_beside section--only_pc">
+            <div class="header__left">
+                <div class="header__logo">
+                    <a href="#">PonDeStyle</a>
+                </div>
+            </div>
+            <div class="header__right">
+                <div class="global-nav hide-mobile">
+                    <a href="#" class="global-nav__item">Home</a>
+                    <a href="#" class="global-nav__item">Document</a>
+                    <a href="#" class="global-nav__item">Github</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="hero hero--colored">
+        <div class="triangle">
+            <div class="triangle__content">ALPHA</div>
+        </div>
+        <div class="container">
+            <hgroup class="section">
+                <h1 class="h3">Grids</h1>
+                <h5>PonDeStyle's grid system is very flexible.</h5>
+            </hgroup>
+        </div>
+    </header>
+    <section class="O bezel text-center">
+        <h1 class="section">Basic Use</h1>
+        <div class="container">
+            <h3>half and half</h3>
+            <div class="C C--mobile">
+                <div class="c">
+                    <p class="section gridtest">1</p>
+                </div>
+                <div class="c">
+                    <p class="section gridtest">2</p>
+                </div>
+            </div>
+            <h3>4 / 4</h3>
+            <div class="C">
+                <div class="c">
+                    <p class="section gridtest">1</p>
+                </div>
+                <div class="c">
+                    <p class="section gridtest">2</p>
+                </div>
+                <div class="c">
+                    <p class="section gridtest">3</p>
+                </div>
+                <div class="c">
+                    <p class="section gridtest">4</p>
+                </div>
+            </div>
+            <h3>2 : 1</h3>
+            <div class="C">
+                <div class="c c--2x c--order-right-pc">
+                    <p class="section gridtest">1</p>
+                </div>
+                <div class="c">
+                    <p class="section gridtest">2</p>
+                </div>
+            </div>
+            <h3>wrapped</h3>
+            <div class="C C--wrapped C--mobile">
+                <div class="c c--half">
+                    <p class="section gridtest">1</p>
+                </div>
+                <div class="c c--half">
+                    <p class="section gridtest">2</p>
+                </div>
+                <div class="c c--quarter">
+                    <p class="section gridtest">3</p>
+                </div>
+                <div class="c c--quarter">
+                    <p class="section gridtest">4</p>
+                </div>
+                <div class="c c--quarter">
+                    <p class="section gridtest">5</p>
+                </div>
+                <div class="c c--quarter">
+                    <p class="section gridtest">6</p>
+                </div>
+                <div class="c c--quarter">
+                    <p class="section gridtest">7</p>
+                </div>
+                <div class="c c--quarter">
+                    <p class="section gridtest">8</p>
+                </div>
+            </div>
+            <h3>blog style</h3>
+            <div class="C">
+                <div class="c c--3x">
+                    <p class="section gridtest">Main</p>
+                </div>
+                <div class="c c--order-left-pc">
+                    <p class="section gridtest">Sub 1</p>
+                </div>
+                <div class="c">
+                    <p class="section gridtest">Sub 2</p>
+                </div>
+            </div>
+            <div class="C">
+                <div class="c gridtest">
+                    <p class="section iamcenter">o</p>
+                </div>
+                <div class="C C--column c">
+                    <div class="c gridtest">
+                        <p class="section">o</p>
+                    </div>
+                    <div class="C c">
+                        <div class="c gridtest"><p class="section">o</p></div>
+                        <div class="C C--column c">
+                            <div class="c gridtest">
+                                <p class="section">o</p>
+                            </div>
+                            <div class="c gridtest">
+                                <p class="section">o</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # PonDeStyle 
 
-[![Build Status](https://travis-ci.org/PonDeStyle/PonDeStyle.svg?branch=master)](https://travis-ci.org/PonDeStyle/PonDeStyle)
+[![Build Status](https://travis-ci.org/PonDeStyle/PonDeStyle.svg?branch=master)](https://travis-ci.org/PonDeStyle/PonDeStyle) [![Build status](https://ci.appveyor.com/api/projects/status/ytc4dqle1lbu5dr5?svg=true)](https://ci.appveyor.com/project/holy0201/pondestyle)
 
 ![PonDeStyle](https://github.com/PonDeStyle/PonDeStyle/wiki/images/pondestyle-git-wall.png)
 

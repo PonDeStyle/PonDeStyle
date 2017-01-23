@@ -3,7 +3,9 @@
     box-shadow: 0 0 28px rgba(0, 0, 0, .11);
     display: flex;
     height: 4.25rem;
+    position: relative;
     width: 100%;
+    z-index: 10;
 
     &__left {
         align-items: center;
