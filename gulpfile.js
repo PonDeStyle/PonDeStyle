@@ -40,7 +40,16 @@ gulp.task('postcss', function () {
         customMedia,
         colorFunction,
         matches,
-        autoprefixer({ browsers: ['last 1 version'] }),
+        autoprefixer({ browsers: [
+            'last 2 Chrome versions',
+            'last 2 Firefox versions',
+            'last 2 Safari versions',
+            'last 2 Edge versions',
+            'Explorer >= 11',
+            'last 2 iOS versions',
+            'last 2 ChromeAndroid versions',
+            'last 2 FirefoxAndroid versions'
+        ] }),
         discardEmpty,
         discardComments,
         reporter({ clearMessages: true })
