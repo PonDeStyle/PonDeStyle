@@ -4,4 +4,6 @@ engines:
     channel: "beta"
 ratings:
   paths:
-  - "./src/style/**/*.css"
+  - "**.css"
+exclude_paths:
+  - "dist/pondestyle.min.css"
