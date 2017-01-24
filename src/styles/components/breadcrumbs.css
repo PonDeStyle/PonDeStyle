@@ -3,7 +3,7 @@
     border-radius: var(--border-radius);
     display: flex;
     overflow: auto;
-    padding: .6rem 1.2rem;
+    padding: .59375rem 1.2rem;
 
     &__item {
         flex-shrink: 0;

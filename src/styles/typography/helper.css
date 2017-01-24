@@ -32,3 +32,19 @@
     color: var(--white-color);
     margin: 1rem;
 }
+
+.marginright {
+    line-height: 1;
+    margin-right: .4rem;
+}
+
+.icon {
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+}
+
+.fa.fa-lg {
+    line-height: 1;
+    vertical-align: initial;
+}
