@@ -9,3 +9,16 @@ var,
 samp {
     font-family: 'Menlo', Consolas, Courier, monospace;
 }
+
+.serif {
+    font-family: 'Times New Roman', serif;
+}
+
+.alert,
+.pagination,
+.breadcrumbs,
+.decolink,
+.button,
+.uifont {
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Avenir Next', 'Segoe UI', sans-serif;
+}

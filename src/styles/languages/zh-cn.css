@@ -1,7 +1,11 @@
 html[lang^='zh'] {
     font-family: 'Avenir Next', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
 
-html[lang^='zh'] .serif {
-    font-family: 'Times New Roman', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+    & .serif {
+        font-family: 'Times New Roman', 'Kaiti SC', serif;
+    }
+
+    & :matches(.alert, .pagination, .breadcrumbs, .decolink, .button, .uifont) {
+        font-family: '-apple-system', 'BlinkMacSystemFont', 'Avenir Next', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    }
 }

@@ -305,6 +305,19 @@ samp {
     font-family: 'Menlo', Consolas, Courier, monospace;
 }
 
+.serif {
+    font-family: 'Times New Roman', serif;
+}
+
+.alert,
+.pagination,
+.breadcrumbs,
+.decolink,
+.button,
+.uifont {
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Avenir Next', 'Segoe UI', sans-serif;
+}
+
 @font-face {
     font-family: 'Yu Gothic';
     font-weight: 300;
@@ -355,18 +368,6 @@ samp {
 
 @font-face {
     font-family: 'Hiragino Sans';
-    font-weight: 100;
-    src: local('HiraginoSans-W0');
-}
-
-@font-face {
-    font-family: 'Hiragino Sans';
-    font-weight: 200;
-    src: local('HiraginoSans-W1');
-}
-
-@font-face {
-    font-family: 'Hiragino Sans';
     font-weight: 300;
     src: local('HiraginoSans-W2');
 }
@@ -389,24 +390,6 @@ samp {
     src: local('HiraginoSans-W5');
 }
 
-@font-face {
-    font-family: 'Hiragino Sans';
-    font-weight: 700;
-    src: local('HiraginoSans-W6');
-}
-
-@font-face {
-    font-family: 'Hiragino Sans';
-    font-weight: 800;
-    src: local('HiraginoSans-W7');
-}
-
-@font-face {
-    font-family: 'Hiragino Sans';
-    font-weight: 900;
-    src: local('HiraginoSans-W8');
-}
-
 html[lang='ja'] {
     font-family: 'Avenir Next', 'Segoe UI', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
 }
@@ -418,8 +401,10 @@ html[lang='ja'] .serif {
 html[lang='ja'] .alert,
 html[lang='ja'] .pagination,
 html[lang='ja'] .breadcrumbs,
-html[lang='ja'] .decolink {
-    font-family: 'Avenir Next', 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif;
+html[lang='ja'] .decolink,
+html[lang='ja'] .button,
+html[lang='ja'] .uifont {
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Avenir Next', 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif;
 }
 
 html[lang='ko'] {
@@ -427,7 +412,16 @@ html[lang='ko'] {
 }
 
 html[lang='ko'] .serif {
-    font-family: 'Times New Roman', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+    font-family: 'Times New Roman', 'AppleMyungjo', 'Gungsuh', serif;
+}
+
+html[lang='ko'] .alert,
+html[lang='ko'] .pagination,
+html[lang='ko'] .breadcrumbs,
+html[lang='ko'] .decolink,
+html[lang='ko'] .button,
+html[lang='ko'] .uifont {
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Avenir Next', 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 }
 
 html[lang^='zh'] {
@@ -435,7 +429,16 @@ html[lang^='zh'] {
 }
 
 html[lang^='zh'] .serif {
-    font-family: 'Times New Roman', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+    font-family: 'Times New Roman', 'Kaiti SC', serif;
+}
+
+html[lang^='zh'] .alert,
+html[lang^='zh'] .pagination,
+html[lang^='zh'] .breadcrumbs,
+html[lang^='zh'] .decolink,
+html[lang^='zh'] .button,
+html[lang^='zh'] .uifont {
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Avenir Next', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 .text-center {
@@ -467,6 +470,12 @@ html[lang^='zh'] .serif {
     }
 }
 
+@media (min-width: 768px) {
+    .hide-computer {
+        display: none !important;
+    }
+}
+
 .gridtest {
     background: linear-gradient(45deg, #3086e6, #039eff);
     border-radius: 2px;
@@ -475,7 +484,6 @@ html[lang^='zh'] .serif {
 }
 
 .marginright {
-    line-height: 1;
     margin-right: .4rem;
 }
 
@@ -485,9 +493,27 @@ html[lang^='zh'] .serif {
     width: 1em;
 }
 
+.icon--marginright {
+    margin-right: .4rem;
+}
+
 .fa.fa-lg {
     line-height: 1;
     vertical-align: initial;
+}
+
+.negativemargin {
+    margin: 0 -1rem;
+}
+
+.flexcentering {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+}
+
+.dis_block {
+    display: block;
 }
 
 body {
@@ -948,34 +974,30 @@ hr.nomargin {
 }
 
 label {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-}
-
-label.radio,
-label.checkbox {
-    align-items: center;
-    flex-direction: row;
-}
-
-label.submit {
-    justify-content: flex-start;
+    display: block;
+    margin-right: 1rem;
 }
 
 input {
     border: 1px solid hsl(205, 27%, 77%);
     border-radius: 2px;
-    display: inline-flex;
+    display: block;
     font-size: 1rem;
     font-weight: 300;
-    height: 2.2em;
+    height: 2.625em;
     padding: .1rem .8rem;
 }
 
 input[type='checkbox'],
 input[type='radio'] {
-    margin: 0 1rem;
+    display: inline-block;
+    height: 1rem;
+    margin-right: .6rem;
+}
+
+input[type='checkbox']:focus,
+input[type='radio']:focus {
+    border: 0;
 }
 
 input[type='color'] {
@@ -1006,25 +1028,32 @@ input[type='submit'] {
     vertical-align: top;
 }
 
+input[disabled] {
+    background: hsl(180, 14%, 97%);
+}
+
 input:focus {
     border: 1px solid #3086e6;
     outline: none;
 }
 
+input.fullwidth {
+    width: 100%;
+}
+
 select {
-    background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='5080.701 1119.615 24.66 13.745'><defs><style>.cls-1 {fill: none;stroke: #fff;stroke-width: 2px;}</style></defs><path class='cls-1' d='M429.408, 422.322l11.623, 11.623, 11.623-11.623' transform='translate(4652 698)'/></svg>"), linear-gradient(45deg, #3086e6, #039eff);
-    background-position: right .8rem center, right;
-    background-size: 1.3rem 1.3rem, 3rem 100%;
+    background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' ver='1.1' viewBox='5080.701 1119.615 24.66 13.745'><path style='fill: none; stroke: %23fff; stroke-width: 2px;' d='M5081.408 1120.322l11.623 11.623 11.624-11.623' /></svg>"), linear-gradient(45deg, #3086e6, #039eff);
+    background-position: right .8em center, right;
+    background-size: 1.3em 1.3em, 3em 100%;
     border: 1px solid hsl(205, 27%, 77%);
     border-radius: 2px;
     cursor: pointer;
-    display: inline-flex;
+    display: inline-block;
     font-size: 1rem;
     font-weight: 400;
-    height: 2.2em;
+    height: 2.625em;
     min-width: 16rem;
-    padding: .1rem .8rem;
-    padding-right: 4rem;
+    padding: .1em 4em .1em .8em;
     position: relative;
 }
 
@@ -1042,39 +1071,46 @@ select:focus {
 }
 
 select.whity {
-    background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='5080.701 1119.615 24.66 13.745'><defs><style>.cls-1 {fill: none;stroke: #3086e6;stroke-width: 2px;}</style></defs><path class='cls-1' d='M429.408, 422.322l11.623, 11.623, 11.623-11.623' transform='translate(4652 698)'/></svg>");
-    background-position: right .8rem center;
-    background-size: 1.3rem 1.3rem;
+    background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' ver='1.1' viewBox='5080.701 1119.615 24.66 13.745'><path style='fill: none; stroke: rgb%2848, 134, 230%29; stroke-width: 2px;' d='M5081.408 1120.322l11.623 11.623 11.624-11.623' /></svg>");
+    background-position: right .8em center;
+    background-size: 1.3em 1.3em;
 }
 
 @media screen and (min-width: 0\0) {
     select {
         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAOCAYAAADaOrdAAAAAAXNSR0IArs4c6QAAAIZJREFUOBGt04EJgCAQBVBHcJRGcoRGaJPcpDaojewb/pCgPL07+JxG3NMgl1KakA3xzrAwLyDrPRKLHcl1ICYQ5mSAFRxWHjnLEzWEOTUQn49jBX0ClLRQE9BCYmAU6gZ6oWFACqmBFmQG/EAzEFbke+qOifUPaw/whC/I7gYE2Au0cC/tF/REfFeNVHCIAAAAAElFTkSuQmCC'), linear-gradient(45deg, #3086e6, #039eff);
-        background-size: 1.3rem .8rem, 3rem 100%;
+        background-size: 1.3em .8em, 3em 100%;
     }
-}
 
-@media screen and (min-width: 0\0) {
     select.whity {
         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAOCAYAAADaOrdAAAAAAXNSR0IArs4c6QAAAOFJREFUOBGt09ENgjAQANA7giboDwnsIRsYN3AE/NYfN3ADfuy3MomOoIOY8AMmhHj20BgJFFrr/UDba1+PHOCLMgr3xclPyIc/RiDucSDyAx+JoSjO8jkHoEtVThbZFjNesAkGEKgGCHDlVKW3BKKr9CJ3bF9RAyBKb2vviHxj/lTuSFaEOLOpqAVspjGfXyP8YgupgAZiA/UBLeQXaAjoREwgHUCJ6EC6QC/SB5kAg0gX9CBMHYSE14j/g3eb8lgVnxZWJfB8s71fmboAZ2shnPgNmQC81ygYCkW+M9okk5+VctLnM7my1gAAAABJRU5ErkJggg==');
-        background-position: right .8rem;
-        background-size: 1.3rem .8rem;
+        background-position: right .8rem center;
+        background-size: 1.3em .8em;
     }
 }
 
 textarea {
     border: 1px solid hsl(205, 27%, 77%);
     border-radius: 2px;
-    display: inline-flex;
     font-size: 1rem;
     font-weight: 300;
     max-width: 100%;
     padding: .6rem .8rem;
+    width: 100%;
 }
 
 textarea:focus {
     border: 1px solid #3086e6;
     outline: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset.column > label,
+fieldset.column > input {
+    display: inline-block;
 }
 
 table {
@@ -1277,6 +1313,7 @@ td {
     font-size: 1.2rem;
     font-weight: 300;
     height: 2.1875em;
+    line-height: 1;
     margin-right: 1rem;
     outline: none;
     padding: 0 .8em;
@@ -1321,7 +1358,7 @@ td {
 
 .decolink--rounded,
 .button--rounded {
-    border-radius: 1.1em;
+    border-radius: 1.09375em;
 }
 
 .decolink--fullwidth,
@@ -1552,6 +1589,7 @@ td {
 
 .horizontal-menu__item a {
     color: hsl(204, 10%, 30%);
+    display: block;
     padding: .2rem 1rem;
     text-decoration: none;
 }
