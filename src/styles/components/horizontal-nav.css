@@ -1,8 +1,11 @@
 .horizontal-menu {
+    width: 100%;
+
     &__list {
         color: #000;
         display: flex;
         list-style: none;
+        margin: 0;
         overflow: auto;
         padding: 0;
 
@@ -36,12 +39,13 @@
     &__item {
         border-bottom: 2px solid var(--light-gray-color);
         flex-shrink: 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.5;
 
         & a {
             color: var(--dark-gray-color);
             display: block;
-            padding: .2rem 1rem;
+            padding: .375rem 1.2rem;
             text-decoration: none;
         }
 
