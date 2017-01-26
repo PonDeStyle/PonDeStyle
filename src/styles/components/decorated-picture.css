@@ -3,13 +3,13 @@
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, .16);
     display: inline-block;
-    height: 8rem;
+    height: var(--decopicture-size);
     margin: 1rem;
     overflow: hidden;
     position: relative;
     transition: box-shadow .1s linear;
     vertical-align: middle;
-    width: 8rem;
+    width: var(--decopicture-size);
 
     &--square {
         border-radius: initial;
@@ -20,13 +20,13 @@
     }
 
     &--2x {
-        height: 16rem;
-        width: 16rem;
+        height: calc(var(--decopicture-size) * 2);
+        width: calc(var(--decopicture-size) * 2);
     }
 
     &--half {
-        height: 4rem;
-        width: 4rem;
+        height: calc(var(--decopicture-size) / 2);
+        width: calc(var(--decopicture-size) / 2);
     }
 
     &--icon {

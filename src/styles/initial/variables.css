@@ -1,24 +1,45 @@
 :root {
-    /* --primary-color: hsl(206, 90%, 52%); */
-    --primary-color: #3086e6;
+    /* Color definition */
     --black-color: #000;
     --white-color: #fff;
     --whity-gray-color: hsl(180, 14%, 97%);
     --light-gray-color: hsl(205, 27%, 77%);
     --dark-gray-color: hsl(204, 10%, 30%);
-    --red-color: #e92a73;
-    --green-color: #30e58b;
+    --blue-color: hsl(212, 78%, 55%);
+    --red-color: hsl(337, 78%, 54%);
+    --green-color: hsl(129, 64%, 47%);
+    --yellow-color: hsl(51, 85%, 58%);
+    --purple-color: hsl(270, 85%, 58%);
 
-    /* --primary-color-grad-to: color(var(--primary-color) hue(- 9) saturation(+ 10%) lightness(+ 5%)); */
-    --primary-color-grad-to: #039eff;
+    /* Alternative color definition */
+    --blue-color-grad-to: color(var(--blue-color) hue(- 9) saturation(+ 22%) lightness(- 4%));
+    --red-color-grad-to: color(var(--red-color) hue(- 9) saturation(+ 22%) lightness(- 4%));
+    --green-color-grad-to: color(var(--green-color) hue(- 9) saturation(+ 22%) lightness(- 4%));
+    --yellow-color-grad-to: color(var(--yellow-color) hue(+ 4) saturation(+ 15%) lightness(- 14%));
+    --purple-color-grad-to: color(var(--purple-color) hue(- 9) saturation(+ 15%) lightness(- 4%));
+
+    /* Gradient definition */
+    --blue-color-gradient: linear-gradient(45deg, var(--blue-color), var(--blue-color-grad-to));
+    --red-color-gradient: linear-gradient(45deg, var(--red-color), var(--red-color-grad-to));
+    --green-color-gradient: linear-gradient(45deg, var(--green-color), var(--green-color-grad-to));
+    --yellow-color-gradient: linear-gradient(45deg, var(--yellow-color), var(--yellow-color-grad-to));
+    --purple-color-gradient: linear-gradient(45deg, var(--purple-color), var(--purple-color-grad-to));
+
+    /* Primary color definition */
+    --primary-color: var(--blue-color);
+    --primary-color-grad-to: var(--blue-color-grad-to);
     --primary-color-gradient: linear-gradient(45deg, var(--primary-color), var(--primary-color-grad-to));
-    --container-width: 67.5rem;
-    --std-size: 16px;
-    --section-padding: 1rem;
-    --fixed-column-width: 18.75rem;
-    --body-spacing-width: 10px;
-    --text-color-dark: #464f55;
+
+    /* Text color definition */
+    --text-color-dark: var(--dark-gray-color);
     --text-mark-color: #f9ffb2;
+
+    /* Computed */
+    --container-width: 67.5rem;
+    --std-size: 1rem;
+    --line-height: 1.75;
+    --section-padding: 1rem;
+    --fixed-column-width: 18.75rem; /* e.g. Sidebar */
     --border-radius: 2px;
 
     /* Heading font size. */
@@ -36,4 +57,10 @@
     --font-weight-medium: 500;
     --font-weight-demibold: 600;
     --font-weight-bold: 700;
+
+    /* Components */
+    --decopicture-size: 8rem;
+
+    /* Layouts */
+    --header-height: 4.25rem;
 }

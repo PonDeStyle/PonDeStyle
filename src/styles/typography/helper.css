@@ -15,7 +15,7 @@
 }
 
 .hide-mobile {
-    @media (--phone-below) {
+    @media (--tablet-below) {
         display: none !important;
     }
 }
@@ -70,4 +70,16 @@
 
 .dis_block {
     display: block;
+}
+
+.clearfix {
+    &::after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+}
+
+.alignself {
+    align-self: center;
 }

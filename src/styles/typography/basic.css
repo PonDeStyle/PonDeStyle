@@ -1,7 +1,7 @@
 body {
     color: var(--text-color-dark);
     font-weight: var(--font-weight-regular);
-    line-height: 1.7;
+    line-height: var(--line-height);
     text-rendering: optimizeLegibility;
 }
 

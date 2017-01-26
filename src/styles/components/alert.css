@@ -50,6 +50,6 @@
     }
 
     &--red {
-        background: #e92a73;
+        background: var(--red-color);
     }
 }
