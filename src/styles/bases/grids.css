@@ -2,7 +2,6 @@
 .C {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     @media (--tablet) {
         &:not(&--column) {
@@ -17,8 +16,12 @@
         }
     }
 
-    &--centered {
+    &--vertical-centered {
         align-items: center;
+    }
+
+    &--horizontal-centered {
+        justify-content: center;
     }
 
     &--mobile {
