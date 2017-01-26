@@ -26,6 +26,12 @@
     }
 }
 
+.hide-computer {
+    @media (--tablet) {
+        display: none !important;
+    }
+}
+
 .gridtest {
     background: var(--primary-color-gradient);
     border-radius: var(--border-radius);
@@ -34,7 +40,6 @@
 }
 
 .marginright {
-    line-height: 1;
     margin-right: .4rem;
 }
 
@@ -42,9 +47,27 @@
     fill: currentColor;
     height: 1em;
     width: 1em;
+
+    &--marginright {
+        margin-right: .4rem;
+    }
 }
 
 .fa.fa-lg {
     line-height: 1;
     vertical-align: initial;
+}
+
+.negativemargin {
+    margin: 0 -1rem;
+}
+
+.flexcentering {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+}
+
+.dis_block {
+    display: block;
 }
