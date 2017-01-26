@@ -40,6 +40,7 @@
 
         & a {
             color: var(--dark-gray-color);
+            display: block;
             padding: .2rem 1rem;
             text-decoration: none;
         }

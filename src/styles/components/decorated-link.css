@@ -8,6 +8,7 @@
     font-size: 1.2rem;
     font-weight: 300;
     height: 2.1875em;
+    line-height: 1;
     margin-right: 1rem;
     outline: none;
     padding: 0 .8em;
@@ -44,7 +45,7 @@
     }
 
     &--rounded {
-        border-radius: calc(2.2em / 2);
+        border-radius: calc(2.1875em / 2);
     }
 
     &--fullwidth {
