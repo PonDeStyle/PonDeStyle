@@ -1,6 +1,13 @@
-# IntelliJ project files
 .idea
 out
 gen
+/demo/
+/maps/
+.appveyor.yml
+.codeclimate.yml
+.gitignore
+.stylelintrc
+.travis.yml
+gulpfile.js
 
 .DS_Store

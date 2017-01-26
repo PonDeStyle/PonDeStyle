@@ -10,7 +10,8 @@
     "postcss",
     "html",
     "flexbox",
-    "responsive"
+    "responsive",
+    "cssnext"
   ],
   "repository": "PonDeStyle/PonDeStyle",
   "homepage": "https://pondestyle.github.io",
