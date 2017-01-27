@@ -1403,6 +1403,52 @@ td {
     cursor: default;
 }
 
+.decolinks,
+.buttons {
+    display: flex;
+}
+
+.decolinks__item,
+.buttons__item {
+    border-radius: 0;
+    margin: 0;
+}
+
+.decolinks__item:first-child,
+.buttons__item:first-child {
+    border-radius: 2px 0 0 2px;
+}
+
+.decolinks__item:last-child,
+.buttons__item:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+.decolinks__item.button--reversed,
+.buttons__item.button--reversed {
+    border-right-width: 0;
+}
+
+.decolinks__item.button--reversed:last-child,
+.buttons__item.button--reversed:last-child {
+    border-right-width: 1px;
+}
+
+.decolinks__item.dropmenu > .dropmenu__button,
+.buttons__item.dropmenu > .dropmenu__button {
+    border-radius: 0;
+}
+
+.decolinks__item.dropmenu:first-child > .dropmenu__button,
+.buttons__item.dropmenu:first-child > .dropmenu__button {
+    border-radius: 2px 0 0 2px;
+}
+
+.decolinks__item.dropmenu:last-child > .dropmenu__button,
+.buttons__item.dropmenu:last-child > .dropmenu__button {
+    border-radius: 0 2px 2px 0;
+}
+
 .decopicture {
     border: 4px solid #fff;
     border-radius: 50%;
@@ -1630,7 +1676,6 @@ td {
 .dropmenu {
     display: inline-flex;
     position: relative;
-    z-index: 30;
 }
 
 .dropmenu__button {
@@ -1648,6 +1693,7 @@ td {
     padding: 0;
     position: absolute;
     top: 100%;
+    z-index: 30;
 }
 
 .dropmenu__content--fit {
