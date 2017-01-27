@@ -527,6 +527,10 @@ html[lang^='zh'] .uifont {
     align-self: center;
 }
 
+.nomargin {
+    margin: 0 !important;
+}
+
 body {
     color: hsl(204, 10%, 30%);
     font-weight: 400;
@@ -1283,7 +1287,7 @@ td {
     right: 0;
     top: 0;
     transform: rotate(0);
-    z-index: 9999;
+    z-index: 10;
 }
 
 .triangle::before {
@@ -1623,6 +1627,172 @@ td {
     border-bottom: 2px solid hsl(212, 78%, 55%);
 }
 
+.dropmenu {
+    display: inline-flex;
+    position: relative;
+    z-index: 30;
+}
+
+.dropmenu__button {
+    margin: 0;
+}
+
+.dropmenu__content {
+    background: #fff;
+    border: 1px solid hsl(205, 27%, 77%);
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .06);
+    display: none;
+    left: 0;
+    margin-top: .5625rem;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+.dropmenu__content--fit {
+    right: 0;
+}
+
+.dropmenu__content--right {
+    left: auto;
+    right: 0;
+}
+
+.dropmenu__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropmenu__item {
+    align-items: center;
+    display: flex;
+}
+
+.dropmenu__item a {
+    color: inherit;
+    display: block;
+    padding: .5625rem 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.dropmenu__item a:hover {
+    background: hsl(180, 14%, 97%);
+}
+
+.dropmenu[aria-expanded='true'] .dropmenu__content {
+    display: block;
+}
+
+.card {
+    border: 1px solid hsl(205, 27%, 77%);
+    border-radius: 2px;
+    flex-direction: column;
+    position: relative;
+}
+
+.card__header {
+    border-bottom: 1px solid hsl(205, 27%, 77%);
+    display: flex;
+    line-height: 1.5;
+    padding: .625rem 1.25rem;
+    position: relative;
+}
+
+.card__header_right {
+    margin-left: auto;
+}
+
+.card__header--picture {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 56.25% 0 0;
+}
+
+.card__content {
+    margin-top: .625rem;
+    padding: .625rem 1.25rem;
+}
+
+.card__footer {
+    background: hsl(180, 14%, 97%);
+    padding: .625rem 1.25rem;
+}
+
+.accordion {
+    border: 1px solid hsl(205, 27%, 77%);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion__header {
+    border-bottom: 1px solid hsl(205, 27%, 77%);
+    cursor: default;
+    padding: .625rem 3.8rem .625rem 1.25rem;
+    position: relative;
+}
+
+.accordion__button {
+    background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' ver='1.1' viewBox='5080.701 1119.615 24.66 13.745'><path style='fill: none; stroke: rgb%2848, 134, 230%29; stroke-width: 2px;' d='M5081.408 1120.322l11.623 11.623 11.624-11.623' /></svg>");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1.3em 1.3em;
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+    transition: all .15s cubic-bezier(.23, 1, .32, 1);
+    width: 3.8rem;
+}
+
+@media screen and (min-width: 0\0) {
+    .accordion__button {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAOCAYAAADaOrdAAAAAAXNSR0IArs4c6QAAAOFJREFUOBGt09ENgjAQANA7giboDwnsIRsYN3AE/NYfN3ADfuy3MomOoIOY8AMmhHj20BgJFFrr/UDba1+PHOCLMgr3xclPyIc/RiDucSDyAx+JoSjO8jkHoEtVThbZFjNesAkGEKgGCHDlVKW3BKKr9CJ3bF9RAyBKb2vviHxj/lTuSFaEOLOpqAVspjGfXyP8YgupgAZiA/UBLeQXaAjoREwgHUCJ6EC6QC/SB5kAg0gX9CBMHYSE14j/g3eb8lgVnxZWJfB8s71fmboAZ2shnPgNmQC81ygYCkW+M9okk5+VctLnM7my1gAAAABJRU5ErkJggg==');
+        background-size: 1.3em .8em;
+    }
+}
+
+.accordion__content {
+    display: none;
+    margin-top: .625rem;
+    padding: .625rem 1.25rem;
+}
+
+.accordion[aria-expanded='false'] .accordion__button {
+    transform: rotate(0deg);
+}
+
+.accordion[aria-expanded='true'] .accordion__content {
+    display: block;
+}
+
+.accordions__item {
+    border-bottom-width: 0;
+    border-radius: 0;
+}
+
+.accordions__item:first-child {
+    border-radius: 2px 2px 0 0;
+}
+
+.accordions__item:last-child {
+    border-bottom-width: 1px;
+    border-radius: 0 0 2px 2px;
+}
+
 .hero,
 .H {
     display: flex;
@@ -1687,7 +1857,7 @@ td {
     min-height: 4.25rem;
     position: relative;
     width: 100%;
-    z-index: 10;
+    z-index: 30;
 }
 
 .header__left {
@@ -1752,9 +1922,14 @@ td {
     outline: none;
 }
 
-.global-nav > .global-nav__item {
+.global-nav__link {
     align-items: center;
+    display: flex;
     padding: .6rem 1.2rem;
+}
+
+.global-nav__link:focus {
+    outline: none;
 }
 
 .fullwidth-bar {
