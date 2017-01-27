@@ -1,0 +1,35 @@
+.card {
+    border: 1px solid var(--light-gray-color);
+    border-radius: var(--border-radius);
+    flex-direction: column;
+    position: relative;
+
+    &__header {
+        border-bottom: 1px solid var(--light-gray-color);
+        display: flex;
+        line-height: 1.5;
+        padding: .625rem 1.25rem;
+        position: relative;
+
+        &_right {
+            margin-left: auto;
+        }
+
+        &--picture {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 56.25% 0 0;
+        }
+    }
+
+    &__content {
+        margin-top: .625rem;
+        padding: .625rem 1.25rem;
+    }
+
+    &__footer {
+        background: var(--whity-gray-color);
+        padding: .625rem 1.25rem;
+    }
+}
