@@ -83,3 +83,7 @@
 .alignself {
     align-self: center;
 }
+
+.nomargin {
+    margin: 0 !important;
+}
