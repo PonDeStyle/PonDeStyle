@@ -2,8 +2,8 @@
   "name": "PonDeStyle",
   "version": "0.0.1",
   "description": "Lightweight CSS Framework",
-  "main": "dist/style.css",
-  "author": "holy0201 <holy0201@gmail.com>",
+  "main": "src/styles/pondestyle.css",
+  "author": "holy0201 <biz@holybea.com>",
   "keywords": [
     "css",
     "framework",
