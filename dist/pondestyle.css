@@ -1705,6 +1705,46 @@ td {
     right: 0;
 }
 
+.dropmenu__content--right.dropmenu__content--hukidashi::before {
+    left: auto;
+    right: 19px;
+}
+
+.dropmenu__content--right.dropmenu__content--hukidashi::after {
+    left: auto;
+    right: 20px;
+}
+
+.dropmenu__content--hukidashi {
+    margin-top: 1rem;
+}
+
+.dropmenu__content--hukidashi::before {
+    border-color: transparent transparent hsl(205, 27%, 77%) transparent;
+    border-style: solid;
+    border-width: 11px;
+    content: '';
+    display: block;
+    left: 19px;
+    position: absolute;
+    top: -22px;
+}
+
+.dropmenu__content--hukidashi::after {
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 10px;
+    content: '';
+    display: block;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+}
+
+.dropmenu__content--fixedwidth {
+    width: 18.75rem;
+}
+
 .dropmenu__list {
     display: flex;
     flex-direction: column;
