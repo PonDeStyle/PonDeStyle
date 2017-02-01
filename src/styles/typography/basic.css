@@ -53,10 +53,7 @@ h5,
 h6 {
     font-weight: var(--font-weight-medium);
     line-height: 1.2;
-
-    &:not(:last-child) {
-        margin-bottom: 1rem;
-    }
+    margin-bottom: 1rem;
 }
 
 p {
@@ -168,4 +165,41 @@ hgroup {
 
 .subhead {
     font-weight: var(--font-weight-regular);
+}
+
+hr {
+    background: var(--light-gray-color);
+    border: none;
+    display: block;
+    height: 1px;
+    margin: 1rem auto;
+    position: relative;
+
+    &.stylish {
+        width: 50%;
+
+        &::before {
+            background: linear-gradient(to right, transparent, var(--light-gray-color));
+            content: '';
+            display: block;
+            height: 1px;
+            left: -30px;
+            position: absolute;
+            width: 30px;
+        }
+
+        &::after {
+            background: linear-gradient(to left, transparent, var(--light-gray-color));
+            content: '';
+            display: block;
+            height: 1px;
+            position: absolute;
+            right: -30px;
+            width: 30px;
+        }
+    }
+
+    &.nomargin {
+        margin: 0 auto;
+    }
 }
