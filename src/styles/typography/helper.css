@@ -32,13 +32,6 @@
     }
 }
 
-.gridtest {
-    background: var(--primary-color-gradient);
-    border-radius: var(--border-radius);
-    color: var(--white-color);
-    margin: 1rem;
-}
-
 .marginright {
     margin-right: .4rem;
 }
@@ -73,11 +66,7 @@
 }
 
 .clearfix {
-    &::after {
-        clear: both;
-        content: '';
-        display: block;
-    }
+    @apply --clearfix;
 }
 
 .alignself {
@@ -86,4 +75,17 @@
 
 .nomargin {
     margin: 0 !important;
+}
+
+.gridtest {
+    background: var(--primary-color-gradient);
+    border-radius: var(--border-radius);
+    color: var(--white-color);
+    margin: 1rem;
+}
+
+.iamcenter {
+    align-items: center;
+    display: inline-flex;
+    height: 100%;
 }

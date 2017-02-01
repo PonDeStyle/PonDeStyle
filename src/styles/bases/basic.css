@@ -15,43 +15,6 @@ img {
     max-width: 100%;
 }
 
-hr {
-    background: var(--light-gray-color);
-    border: none;
-    display: block;
-    height: 1px;
-    margin: 1rem auto;
-    position: relative;
-}
-
-hr.stylish {
-    width: 50%;
-
-    &::before {
-        background: linear-gradient(to right, transparent, var(--light-gray-color));
-        content: '';
-        display: block;
-        height: 1px;
-        left: -30px;
-        position: absolute;
-        width: 30px;
-    }
-
-    &::after {
-        background: linear-gradient(to left, transparent, var(--light-gray-color));
-        content: '';
-        display: block;
-        height: 1px;
-        position: absolute;
-        right: -30px;
-        width: 30px;
-    }
-}
-
-hr.nomargin {
-    margin: 0 auto;
-}
-
 .bezel {
     background: var(--white-color);
     margin: 0;
