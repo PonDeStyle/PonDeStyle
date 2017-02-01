@@ -18,6 +18,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var atImport = require('postcss-import');
+var applyRule = require('postcss-apply');
 var calc = require('postcss-calc');
 var customProperties = require('postcss-custom-properties');
 var customMedia = require('postcss-custom-media');
@@ -35,6 +36,7 @@ gulp.task('postcss', function () {
     var plugins = [
         atImport( { plugins: [stylelint] } ),
         customProperties,
+        applyRule,
         calc,
         nesting,
         customMedia,

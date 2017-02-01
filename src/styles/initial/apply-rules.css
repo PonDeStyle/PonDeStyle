@@ -1,0 +1,187 @@
+:root {
+    --clearfix: {
+        &::after {
+            clear: both;
+            content: '';
+            display: block;
+        }
+    };
+
+    --container: {
+        margin: 0 auto;
+        max-width: 100%;
+        width: calc(var(--container-width));
+    };
+
+    --button: {
+        align-items: center;
+        display: inline-flex;
+        font-size: 1.2rem;
+        font-weight: 300;
+        height: 2.1875em;
+        line-height: 1;
+        outline: none;
+        padding: 0 .8em;
+        text-decoration: none;
+    };
+
+    --hero: {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    };
+
+    --section: {
+        padding: var(--section-padding);
+    };
+
+    --columns-initial: {
+        display: flex;
+        flex-direction: column;
+
+        @media (--tablet) {
+            flex-direction: row;
+        }
+    };
+
+    --columns-keep-mobile: {
+        flex-direction: row;
+    };
+
+    --columns-wrapped: {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    };
+
+    --columns-column: {
+        @media (--tablet) {
+            flex-direction: column;
+        }
+    };
+
+    --columns-item-initial: {
+        flex: 0 0 auto;
+
+        @media (--tablet) {
+            flex: 0 1 100%;
+        }
+    };
+
+    --columns-item-column: {
+        flex-basis: auto;
+        flex-grow: 1;
+    };
+
+    --columns-item-1x-keep-mobile: {
+        flex: 0 1 100%;
+    };
+
+    --columns-item-1x-tablet: {
+        @media (--tablet) {
+            flex: 0 1 100%;
+        }
+    };
+
+    --columns-item-1x-desktop: {
+        @media (--desktop) {
+            flex: 0 1 100%;
+        }
+    };
+
+    --columns-item-2x-keep-mobile: {
+        flex: 0 1 200%;
+    };
+
+    --columns-item-2x-tablet: {
+        @media (--tablet) {
+            flex: 0 1 200%;
+        }
+    };
+
+    --columns-item-2x-desktop: {
+        @media (--desktop) {
+            flex: 0 1 200%;
+        }
+    };
+
+    --columns-item-3x-keep-mobile: {
+        flex: 0 1 300%;
+    };
+
+    --columns-item-3x-tablet: {
+        @media (--tablet) {
+            flex: 0 1 300%;
+        }
+    };
+
+    --columns-item-3x-desktop: {
+        @media (--desktop) {
+            flex: 0 1 300%;
+        }
+    };
+
+    --columns-item-4x-keep-mobile: {
+        flex: 0 1 400%;
+    };
+
+    --columns-item-4x-tablet: {
+        @media (--tablet) {
+            flex: 0 1 400%;
+        }
+    };
+
+    --columns-item-4x-desktop: {
+        @media (--desktop) {
+            flex: 0 1 400%;
+        }
+    };
+
+    --columns-item-half-keep-mobile: {
+        flex: 0 1 50%;
+    };
+
+    --columns-item-half-tablet: {
+        @media (--tablet) {
+            flex: 0 1 50%;
+        }
+    };
+
+    --columns-item-half-desktop: {
+        @media (--desktop) {
+            flex: 0 1 50%;
+        }
+    };
+
+    --columns-item-third-keep-mobile: {
+        flex: 0 1 calc(100% / 3);
+    };
+
+    --columns-item-third-tablet: {
+        @media (--tablet) {
+            flex: 0 1 calc(100% / 3);
+        }
+    };
+
+    --columns-item-third-desktop: {
+        @media (--desktop) {
+            flex: 0 1 calc(100% / 3);
+        }
+    };
+
+    --columns-item-quarter-keep-mobile: {
+        flex: 0 1 25%;
+    };
+
+    --columns-item-quarter-tablet: {
+        @media (--tablet) {
+            flex: 0 1 25%;
+        }
+    };
+
+    --columns-item-quarter-desktop: {
+        @media (--desktop) {
+            flex: 0 1 25%;
+        }
+    };
+}

@@ -1,5 +1,5 @@
 .section {
-    padding: var(--section-padding);
+    @apply --section;
 
     &--shadowed {
         box-shadow: 0 0 26px rgba(0, 0, 0, .06);

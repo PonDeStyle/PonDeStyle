@@ -1,18 +1,11 @@
 .decolink,
 .button {
-    align-items: center;
+    @apply --button;
+
     background: var(--primary-color-gradient);
     border-radius: var(--border-radius);
     color: var(--white-color);
-    display: inline-flex;
-    font-size: 1.2rem;
-    font-weight: 300;
-    height: 2.1875em;
-    line-height: 1;
     margin-right: 1rem;
-    outline: none;
-    padding: 0 .8em;
-    text-decoration: none;
     vertical-align: top;
 
     &:hover {

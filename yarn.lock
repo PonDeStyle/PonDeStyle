@@ -2590,6 +2590,13 @@ portscanner@2.1.1:
     async "1.5.2"
     is-number-like "^1.0.3"
 
+postcss-apply:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/postcss-apply/-/postcss-apply-0.4.0.tgz#1097020f17c2bcbaebfe3c4586be124212bd2468"
+  dependencies:
+    balanced-match "^0.4.2"
+    postcss "^5.2.0"
+
 postcss-calc, postcss-calc@^5.2.0:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/postcss-calc/-/postcss-calc-5.3.1.tgz#77bae7ca928ad85716e2fda42f261bf7c1d65b5e"
@@ -2915,7 +2922,7 @@ postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.
     source-map "^0.5.6"
     supports-color "^3.1.2"
 
-postcss@^5.0.18, postcss@^5.0.20, postcss@^5.0.21, postcss@^5.2.4, postcss@^5.2.5:
+postcss@^5.0.18, postcss@^5.0.20, postcss@^5.0.21, postcss@^5.2.0, postcss@^5.2.4, postcss@^5.2.5:
   version "5.2.11"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.11.tgz#ff29bcd6d2efb98bfe08a022055ec599bbe7b761"
   dependencies:

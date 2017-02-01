@@ -1,10 +1,8 @@
 .hero,
 .H {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @apply --hero;
+
     padding: 4rem 0;
-    position: relative;
 
     @media (--tablet) {
         padding: 8rem 0;

@@ -8,5 +8,8 @@
  * This is required. */
 @import 'mediaqueries.css';
 
+/* Import apply rules settings. */
+@import 'apply-rules.css';
+
 /* Import ress.css reset stylesheet. */
 @import 'ress.css';
