@@ -1,13 +1,4 @@
-.vertical-nav,
-.toc {
-    & li {
-        list-style: none;
-    }
-
-    & ul {
-        padding-left: .8rem;
-    }
-
+.vertical-nav {
     & a {
         display: block;
         padding: .25rem .6rem;

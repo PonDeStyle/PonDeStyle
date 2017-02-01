@@ -11,6 +11,10 @@
         position: relative;
     }
 
+    &__title {
+        margin-bottom: 0;
+    }
+
     &__button {
         background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' ver='1.1' viewBox='5080.701 1119.615 24.66 13.745'><path style='fill: none; stroke: rgb%2848, 134, 230%29; stroke-width: 2px;' d='M5081.408 1120.322l11.623 11.623 11.624-11.623' /></svg>");
         background-position: center center;
