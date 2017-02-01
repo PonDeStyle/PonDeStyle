@@ -5,8 +5,8 @@
  * This is required */
 @import 'basic.css';
 
-/* Import flexbox grids system. */
-@import 'grids.css';
+/* Import flexbox columns system. */
+@import 'columns.css';
 
 /* Import section. */
 @import 'section.css';
