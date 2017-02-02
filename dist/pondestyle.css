@@ -706,6 +706,7 @@ hgroup p {
 
 .subhead {
     font-weight: 400;
+    line-height: 1.2;
 }
 
 hr {
@@ -900,6 +901,7 @@ img {
 .columns__item,
 .c {
     flex: 0 0 auto;
+    min-width: 0;
 }
 
 @media (min-width: 768px) {
