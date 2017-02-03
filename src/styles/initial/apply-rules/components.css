@@ -1,0 +1,13 @@
+:root {
+    --button: {
+        align-items: center;
+        display: inline-flex;
+        font-size: 1.2rem;
+        font-weight: 300;
+        height: 2.1875em;
+        line-height: 1;
+        outline: none;
+        padding: 0 .8em;
+        text-decoration: none;
+    };
+}

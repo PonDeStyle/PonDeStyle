@@ -1,0 +1,103 @@
+:root {
+    --hero-initial: {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    };
+
+    --hero-size-normal: {
+        padding: 4rem 0;
+    };
+
+    --hero-size-normal-only-mobile: {
+        @media (--tablet-below) {
+            padding: 4rem 0;
+        }
+    };
+
+    --hero-size-normal-tablet: {
+        @media (--tablet) {
+            padding: 4rem 0;
+        }
+    };
+
+    --hero-size-normal-desktop: {
+        @media (--desktop) {
+            padding: 4rem 0;
+        }
+    };
+
+    --hero-size-normal-wide: {
+        @media (--wide) {
+            padding: 4rem 0;
+        }
+    };
+
+    --hero-size-large: {
+        padding: 8rem 0;
+    };
+
+    --hero-size-large-only-mobile: {
+        @media (--tablet-below) {
+            padding: 8rem 0;
+        }
+    };
+
+    --hero-size-large-tablet: {
+        @media (--tablet) {
+            padding: 8rem 0;
+        }
+    };
+
+    --hero-size-large-desktop: {
+        @media (--desktop) {
+            padding: 8rem 0;
+        }
+    };
+
+    --hero-size-large-wide: {
+        @media (--wide) {
+            padding: 8rem 0;
+        }
+    };
+
+    --hero-size-small: {
+        padding: 2rem 0;
+    };
+
+    --hero-size-small-only-mobile: {
+        @media (--tablet-below) {
+            padding: 2rem 0;
+        }
+    };
+
+    --hero-size-small-tablet: {
+        @media (--tablet) {
+            padding: 2rem 0;
+        }
+    };
+
+    --hero-size-small-desktop: {
+        @media (--desktop) {
+            padding: 2rem 0;
+        }
+    };
+
+    --hero-size-small-wide: {
+        @media (--wide) {
+            padding: 2rem 0;
+        }
+    };
+
+    --hero-full: {
+        min-height: 100vh;
+        padding: 0;
+    };
+
+    --hero-picture: {
+        background-position: center;
+        background-size: cover;
+        color: var(--white-color);
+    };
+}

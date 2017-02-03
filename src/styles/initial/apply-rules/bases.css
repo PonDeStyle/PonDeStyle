@@ -1,0 +1,28 @@
+:root {
+    --bezel-initial: {
+        margin: 0;
+        position: relative;
+    };
+
+    --bezel-normal: {
+        padding: 2rem 0;
+    };
+
+    --bezel-large: {
+        padding: 4rem 0;
+    };
+
+    --bezel-small: {
+        padding: 1rem 0;
+    };
+
+    --container: {
+        margin: 0 auto;
+        max-width: 100%;
+        width: calc(var(--container-width));
+    };
+
+    --section: {
+        padding: var(--section-padding);
+    };
+}

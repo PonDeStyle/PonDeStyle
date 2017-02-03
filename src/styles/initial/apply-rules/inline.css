@@ -1,0 +1,113 @@
+:root {
+    --text-center: {
+        text-align: center;
+    };
+
+    --text-center-only-mobile: {
+        @media (--tablet-below) {
+            text-align: center;
+        }
+    };
+
+    --text-center-tablet: {
+        @media (--tablet) {
+            text-align: center;
+        }
+    };
+
+    --text-center-desktop: {
+        @media (--desktop) {
+            text-align: center;
+        }
+    };
+
+    --text-center-wide: {
+        @media (--wide) {
+            text-align: center;
+        }
+    };
+
+    --text-left: {
+        text-align: left;
+    };
+
+    --text-left-only-mobile: {
+        @media (--tablet-below) {
+            text-align: left;
+        }
+    };
+
+    --text-left-tablet: {
+        @media (--tablet) {
+            text-align: left;
+        }
+    };
+
+    --text-left-desktop: {
+        @media (--desktop) {
+            text-align: left;
+        }
+    };
+
+    --text-left-wide: {
+        @media (--wide) {
+            text-align: left;
+        }
+    };
+
+    --text-right: {
+        text-align: right;
+    };
+
+    --text-right-only-mobile: {
+        @media (--tablet-below) {
+            text-align: right;
+        }
+    };
+
+    --text-right-tablet: {
+        @media (--tablet) {
+            text-align: right;
+        }
+    };
+
+    --text-right-desktop: {
+        @media (--desktop) {
+            text-align: right;
+        }
+    };
+
+    --text-right-wide: {
+        @media (--wide) {
+            text-align: right;
+        }
+    };
+
+    --text-justify: {
+        text-align: justify;
+    };
+
+    --text-justify-only-mobile: {
+        @media (--tablet-below) {
+            text-align: justify;
+        }
+    };
+
+    --text-justify-tablet: {
+        @media (--tablet) {
+            text-align: justify;
+        }
+    };
+
+    --text-justify-desktop: {
+        @media (--desktop) {
+            text-align: justify;
+        }
+    };
+
+    --text-justify-wide: {
+        @media (--wide) {
+            text-align: justify;
+        }
+    };
+}

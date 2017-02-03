@@ -1,0 +1,57 @@
+:root {
+    --display-inline: {
+        display: inline;
+    };
+
+    --display-block: {
+        display: block;
+    };
+
+    --display-flex: {
+        display: flex;
+    };
+
+    --display-inline-block: {
+        display: inline-block;
+    };
+
+    --display-inline-flex: {
+        display: inline-flex;
+    };
+
+    --display-table: {
+        display: table;
+    };
+
+    --display-table-cell: {
+        display: table-cell;
+    };
+
+    --hide: {
+        display: none;
+    };
+
+    --hide-only-mobile: {
+        @media (--tablet-below) {
+            display: none;
+        }
+    };
+
+    --hide-tablet: {
+        @media (--tablet) {
+            display: none;
+        }
+    };
+
+    --hide-desktop: {
+        @media (--desktop) {
+            display: none;
+        }
+    };
+
+    --hide-wide: {
+        @media (--wide) {
+            display: none;
+        }
+    };
+}
