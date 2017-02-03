@@ -1,0 +1,55 @@
+._inline {
+    display: inline !important;
+}
+
+._block {
+    display: block !important;
+}
+
+._flex {
+    display: flex !important;
+}
+
+._inline-block {
+    display: inline-block !important;
+}
+
+._inline-flex {
+    display: inline-flex !important;
+}
+
+._table {
+    display: table !important;
+}
+
+._table-cell {
+    display: table-cell !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.hide-only-mobile {
+    @media (--tablet-below) {
+        display: none !important;
+    }
+}
+
+.hide-tablet {
+    @media (--tablet) {
+        display: none !important;
+    }
+}
+
+.hide-desktop {
+    @media (--desktop) {
+        display: none !important;
+    }
+}
+
+.hide-wide {
+    @media (--wide) {
+        display: none !important;
+    }
+}

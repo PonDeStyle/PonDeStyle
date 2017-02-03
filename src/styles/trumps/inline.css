@@ -1,0 +1,56 @@
+.text-center {
+    @apply --text-center;
+}
+
+.text-center-only-mobile {
+    @apply --text-center-only-mobile;
+}
+
+.text-left {
+    @apply --text-left;
+}
+
+.text-left-only-mobile {
+    @apply --text-left-only-mobile;
+}
+
+.text-right {
+    @apply --text-right;
+}
+
+.text-right-only-mobile {
+    @apply --text-right-only-mobile;
+}
+
+.text-justify {
+    @apply --text-justify;
+}
+
+.text-justify-only-mobile {
+    @apply --text-justify-only-mobile;
+}
+
+.icon {
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+
+    &--first-letter {
+        margin-right: .4rem;
+    }
+
+    &--last-letter {
+        margin-left: .4rem;
+    }
+}
+
+.fa.fa-lg {
+    line-height: 1;
+    vertical-align: initial;
+}
+
+.split {
+    @media (--tablet) {
+        column-count: 2;
+    }
+}

@@ -1,0 +1,15 @@
+.alignself {
+    align-self: center;
+}
+
+.flexcentering {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+}
+
+.iamcenter {
+    align-items: center;
+    display: inline-flex;
+    height: 100%;
+}

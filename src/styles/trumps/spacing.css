@@ -1,0 +1,23 @@
+.margin-right {
+    margin-right: .4rem;
+}
+
+.margin-left {
+    margin-left: .4rem;
+}
+
+.margin-top {
+    margin-top: .4rem;
+}
+
+.margin-bottom {
+    margin-bottom: .4rem;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.negative-margin {
+    margin: 0 -1rem;
+}
