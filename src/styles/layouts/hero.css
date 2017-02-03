@@ -1,11 +1,17 @@
-.hero,
-.H {
-    @apply --hero;
+.hero {
+    @apply --hero-initial;
+    @apply --hero-size-normal;
+    @apply --hero-size-large-tablet;
 
-    padding: 4rem 0;
+    background: var(--white-color);
 
-    @media (--tablet) {
-        padding: 8rem 0;
+    &--small {
+        @apply --hero-size-small;
+        @apply --hero-size-normal-tablet;
+    }
+
+    &--full {
+        @apply --hero-full;
     }
 
     &--colored {
@@ -22,22 +28,7 @@
         background: var(--whity-gray-color);
     }
 
-    &--small {
-        padding: 2rem 0;
-
-        @media (--tablet) {
-            padding: 4rem 0;
-        }
-    }
-
-    &--full {
-        min-height: 100vh;
-        padding: 0;
-    }
-
     &--picture {
-        background-position: center;
-        background-size: cover;
-        color: var(--white-color);
+        @apply --hero-picture;
     }
 }

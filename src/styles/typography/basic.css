@@ -1,7 +1,9 @@
 body {
     color: var(--text-color-dark);
+    font-size: var(--std-size);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height);
+    padding: 0;
     text-rendering: optimizeLegibility;
 }
 
@@ -11,37 +13,27 @@ h1,
 }
 
 h2,
-.h2,
-.O h1,
-.outline h1 {
+.h2 {
     font-size: var(--heading-high-rank);
 }
 
 h3,
-.h3,
-.O .O h1,
-.outline .outline h1 {
+.h3 {
     font-size: var(--heading-high-middle-rank);
 }
 
 h4,
-.h4,
-.O .O .O h1,
-.outline .outline .outline h1 {
+.h4 {
     font-size: var(--heading-low-middle-rank);
 }
 
 h5,
-.h5,
-.O .O .O .O h1,
-.outline .outline .outline .outline h1 {
+.h5 {
     font-size: var(--heading-low-rank);
 }
 
 h6,
-.h6,
-.O .O .O .O .O h1,
-.outline .outline .outline .outline .outline h1 {
+.h6 {
     font-size: var(--heading-lowest-rank);
 }
 
@@ -65,13 +57,19 @@ p {
     }
 }
 
+img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+
 ul,
 ol {
     margin-bottom: 1rem;
     padding-left: 1.8rem;
 }
 
-:matches(ul, dl) :matches(ul, dl) {
+:matches(ul, ol) :matches(ul, ol) {
     margin-bottom: 0;
 }
 
@@ -127,8 +125,7 @@ blockquote > :last-child {
 }
 
 blockquote + .holder {
-    border-left: .4rem solid #464f55;
-    color: var(--light-gray-color);
+    border-left: .4rem solid var(--dark-gray-color);
     padding-left: 1rem;
 
     &::before {
@@ -139,7 +136,7 @@ blockquote + .holder {
 }
 
 figure.blockquote {
-    border-left: .4rem solid #464f55;
+    border-left: .4rem solid var(--dark-gray-color);
     margin-bottom: 1rem;
     padding-left: 1rem;
 

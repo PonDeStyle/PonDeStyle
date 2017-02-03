@@ -1,25 +1,8 @@
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    font-size: var(--std-size);
-    padding: 0;
-}
-
-img {
-    display: inline-block;
-    height: auto;
-    max-width: 100%;
-}
-
 .bezel {
+    @apply --bezel-initial;
+    @apply --bezel-normal;
+
     background: var(--white-color);
-    margin: 0;
-    padding: 2rem 0;
-    position: relative;
 
     &--colored {
         background: var(--primary-color-gradient);
