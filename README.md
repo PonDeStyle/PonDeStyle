@@ -5,7 +5,7 @@
 ![PonDeStyle](https://github.com/PonDeStyle/PonDeStyle/wiki/images/pondestyle-git-wall.png)
 
 PonDeStyle is modern and simple CSS framework based flexbox.
-Development with PostCSS.
+Development with PostCSS and cssnext.
 
 ## Support Browsers
 
@@ -17,11 +17,15 @@ Development with PostCSS.
 
 \* last 2 versions.
 
-## Is it good?
+## Features
 
-WIP
+* PostCSS + cssnext
+* MindBEMding
+* Flexbox columns
+* CJK font support
+* Components
 
-## Install
+## Installation
 
 ### npm
 
@@ -32,6 +36,35 @@ WIP
 or,
 
 ``yarn add pondestyle``
+
+## Usage
+
+You can quickly import your PostCSS development environment.
+
+```
+@import 'PonDeStyle';
+
+:root {
+    --primary-color: blue;
+}
+
+.mycolumn {
+    @apply --columns-initial;
+    
+    &__item {
+        @apply --columns-item-initial;
+    }
+}
+
+.myclass {
+    @media (--tablet) {
+        color: var(--dark-gray-color);
+    }
+}
+
+```
+
+postcss-import and postcss-cssnext is required in your environment.
 
 ## License and Copyright
 
