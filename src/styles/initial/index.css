@@ -9,7 +9,7 @@
 @import 'mediaqueries.css';
 
 /* Import apply rules settings. */
-@import 'apply-rules.css';
+@import 'apply-rules';
 
 /* Import ress.css reset stylesheet. */
 @import 'ress.css';
