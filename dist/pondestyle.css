@@ -647,6 +647,76 @@ hr.nomargin {
     margin: 0 auto;
 }
 
+summary {
+    border: 1px solid hsl(205, 27%, 77%);
+    cursor: default;
+    display: block;
+    line-height: 1.5;
+    outline: none;
+    padding: .625rem 1rem;
+    position: relative;
+}
+
+summary::after {
+    background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' ver='1.1' viewBox='5080.701 1119.615 24.66 13.745'><path style='fill: none; stroke: rgb%2848, 134, 230%29; stroke-width: 2px;' d='M5081.408 1120.322l11.623 11.623 11.624-11.623' /></svg>");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1.3em 1.3em;
+    content: '';
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(0deg);
+    transition: all .15s cubic-bezier(.23, 1, .32, 1);
+    width: 3.8rem;
+}
+
+@media screen and (min-width: 0\0) {
+    summary::after {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAOCAYAAADaOrdAAAAAAXNSR0IArs4c6QAAAOFJREFUOBGt09ENgjAQANA7giboDwnsIRsYN3AE/NYfN3ADfuy3MomOoIOY8AMmhHj20BgJFFrr/UDba1+PHOCLMgr3xclPyIc/RiDucSDyAx+JoSjO8jkHoEtVThbZFjNesAkGEKgGCHDlVKW3BKKr9CJ3bF9RAyBKb2vviHxj/lTuSFaEOLOpqAVspjGfXyP8YgupgAZiA/UBLeQXaAjoREwgHUCJ6EC6QC/SB5kAg0gX9CBMHYSE14j/g3eb8lgVnxZWJfB8s71fmboAZ2shnPgNmQC81ygYCkW+M9okk5+VctLnM7my1gAAAABJRU5ErkJggg==');
+        background-size: 1.3em .8em;
+    }
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details > div,
+details > p {
+    display: none;
+    padding: .625rem 1rem;
+}
+
+details[open] {
+    border: 1px solid hsl(205, 27%, 77%);
+}
+
+details[open] > summary {
+    background: hsl(180, 14%, 97%);
+    border-width: 0 0 1px;
+}
+
+details[open] > summary::after {
+    transform: rotate(180deg);
+}
+
+details[open] > div,
+details[open] > p {
+    display: block;
+}
+
+details + details[open] {
+    border-top-width: 0;
+}
+
+details + details > summary {
+    border-top-width: 0;
+}
+
 table {
     border-radius: 2px;
     overflow-x: scroll;
@@ -1762,6 +1832,34 @@ fieldset.column > input {
 .accordions__item:last-child {
     border-bottom-width: 1px;
     border-radius: 0 0 2px 2px;
+}
+
+.message {
+    background: hsl(180, 14%, 97%);
+    border-left: 5px solid hsl(212, 78%, 55%);
+    border-radius: 2px;
+    line-height: 1.5;
+    padding: .625rem 1rem;
+}
+
+.message--blue {
+    border-left-color: hsl(212, 78%, 55%);
+}
+
+.message--red {
+    border-left-color: hsl(337, 78%, 54%);
+}
+
+.message--yellow {
+    border-left-color: hsl(51, 85%, 58%);
+}
+
+.message--green {
+    border-left-color: hsl(129, 64%, 47%);
+}
+
+.message--black {
+    border-left-color: #000;
 }
 
 .hero {
