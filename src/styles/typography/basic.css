@@ -212,7 +212,7 @@ summary {
     position: relative;
 
     &::after {
-        background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' ver='1.1' viewBox='5080.701 1119.615 24.66 13.745'><path style='fill: none; stroke: rgb%2848, 134, 230%29; stroke-width: 2px;' d='M5081.408 1120.322l11.623 11.623 11.624-11.623' /></svg>");
+        background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20ver%3D%221.1%22%20viewBox%3D%225080.701%201119.615%2024.66%2013.745%22%3E%3Cpath%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(48%2C%20134%2C%20230)%3B%20stroke-width%3A%202px%3B%22%20d%3D%22M5081.408%201120.322l11.623%2011.623%2011.624-11.623%22%20%2F%3E%3C%2Fsvg%3E");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 1.3em 1.3em;
@@ -226,12 +226,6 @@ summary {
         transform: rotate(0deg);
         transition: all .15s cubic-bezier(.23, 1, .32, 1);
         width: 3.8rem;
-
-        /* hack for IE11 */
-        @media screen and (min-width: 0\0) {
-            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAOCAYAAADaOrdAAAAAAXNSR0IArs4c6QAAAOFJREFUOBGt09ENgjAQANA7giboDwnsIRsYN3AE/NYfN3ADfuy3MomOoIOY8AMmhHj20BgJFFrr/UDba1+PHOCLMgr3xclPyIc/RiDucSDyAx+JoSjO8jkHoEtVThbZFjNesAkGEKgGCHDlVKW3BKKr9CJ3bF9RAyBKb2vviHxj/lTuSFaEOLOpqAVspjGfXyP8YgupgAZiA/UBLeQXaAjoREwgHUCJ6EC6QC/SB5kAg0gX9CBMHYSE14j/g3eb8lgVnxZWJfB8s71fmboAZ2shnPgNmQC81ygYCkW+M9okk5+VctLnM7my1gAAAABJRU5ErkJggg==');
-            background-size: 1.3em .8em;
-        }
     }
 }
 
