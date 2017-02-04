@@ -1,0 +1,27 @@
+.message {
+    background: var(--whity-gray-color);
+    border-left: 5px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    line-height: 1.5;
+    padding: .625rem 1rem;
+
+    &--blue {
+        border-left-color: var(--blue-color);
+    }
+
+    &--red {
+        border-left-color: var(--red-color);
+    }
+
+    &--yellow {
+        border-left-color: var(--yellow-color);
+    }
+
+    &--green {
+        border-left-color: var(--green-color);
+    }
+
+    &--black {
+        border-left-color: var(--black-color);
+    }
+}
