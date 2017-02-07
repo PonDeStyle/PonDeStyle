@@ -664,7 +664,6 @@ summary::after {
     background-size: 1.3em 1.3em;
     content: '';
     cursor: pointer;
-    display: block;
     height: 100%;
     position: absolute;
     right: 0;
@@ -1765,11 +1764,7 @@ fieldset.column > input {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 1.3em 1.3em;
-    content: '';
     cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 400;
     height: 100%;
     position: absolute;
     right: 0;

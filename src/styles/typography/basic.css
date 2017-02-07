@@ -218,7 +218,6 @@ summary {
         background-size: 1.3em 1.3em;
         content: '';
         cursor: pointer;
-        display: block;
         height: 100%;
         position: absolute;
         right: 0;
