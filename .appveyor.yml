@@ -8,7 +8,6 @@ install:
   - yarn install
 test_script:
   - node --version
-  - yarn version
   - yarn test
 build: off
 cache:
