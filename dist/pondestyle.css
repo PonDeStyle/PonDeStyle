@@ -1526,25 +1526,25 @@ fieldset.column > input {
     background: hsl(337, 78%, 54%);
 }
 
-.vertical-nav a {
+.vertical-menu a {
     display: block;
     padding: .25rem .6rem;
 }
 
-.vertical-nav__list {
+.vertical-menu__list {
     padding-left: .8rem;
 }
 
-.vertical-nav__item {
+.vertical-menu__item {
     list-style: none;
 }
 
-.vertical-nav__item--current > a {
+.vertical-menu__item--current > a {
     background: hsl(180, 14%, 97%);
     border-radius: 2px;
 }
 
-.vertical-nav__title {
+.vertical-menu__title {
     margin-bottom: .4rem;
 }
 
