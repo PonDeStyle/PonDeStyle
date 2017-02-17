@@ -1282,7 +1282,7 @@ fieldset.column > input {
     border-radius: 2px;
     color: #fff;
     margin-right: 1rem;
-    vertical-align: top;
+    vertical-align: bottom;
 }
 
 .decolink:hover,
@@ -1313,6 +1313,11 @@ fieldset.column > input {
 .decolink--large,
 .button--large {
     font-size: 1.6rem;
+}
+
+.decolink--regular,
+.button--regular {
+    font-size: 1rem;
 }
 
 .decolink--small,
