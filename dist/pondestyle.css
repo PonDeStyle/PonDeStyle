@@ -366,30 +366,6 @@ samp {
     src: local('Yu Gothic UI Semibold');
 }
 
-@font-face {
-    font-family: 'Hiragino Sans';
-    font-weight: 300;
-    src: local('HiraginoSans-W2');
-}
-
-@font-face {
-    font-family: 'Hiragino Sans';
-    font-weight: 400;
-    src: local('HiraginoSans-W3');
-}
-
-@font-face {
-    font-family: 'Hiragino Sans';
-    font-weight: 500;
-    src: local('HiraginoSans-W4');
-}
-
-@font-face {
-    font-family: 'Hiragino Sans';
-    font-weight: 600;
-    src: local('HiraginoSans-W5');
-}
-
 html[lang='ja'] {
     font-family: 'Avenir Next', 'Segoe UI', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
 }
