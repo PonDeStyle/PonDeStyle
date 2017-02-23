@@ -1,5 +1,7 @@
 html {
     font-family: 'Avenir Next', 'Segoe UI', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 pre,
