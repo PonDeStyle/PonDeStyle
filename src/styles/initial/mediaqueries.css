@@ -4,3 +4,5 @@
 @custom-media --wide (min-width: 1200px); /* stylelint-disable-line */
 @custom-media --phone-below (max-width: 543px); /* stylelint-disable-line */
 @custom-media --tablet-below (max-width: 767px); /* stylelint-disable-line */
+@custom-media --desktop-below (max-width: 991px); /* stylelint-disable-line */
+@custom-media --wide-below (max-width: 1199px); /* stylelint-disable-line */
